@@ -11,20 +11,97 @@ dns:
   - https://8.8.8.8/dns-query
 proxies:
 - name: VLESS-01
-  server: 45.33.62.166
-  port: 43595
+  server: update.asshole.eu.cc
+  port: 2095
   type: vless
-  uuid: 2642f590-2bce-4031-8f93-7eed983621f5
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  tls: false
+  network: ws
+  servername: update.asshole.eu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: update.asshole.eu.cc
+- name: VLESS-02
+  server: 108.186.202.51
+  port: 46142
+  type: vless
+  uuid: 255386a8-aec5-4425-bfe7-ca49b7448deb
+  udp: true
+  tls: true
+  network: tcp
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk
+    short-id: 39feeba3085c
+  client-fingerprint: edge
+- name: VLESS-03
+  server: 172.233.139.46
+  port: 53734
+  type: vless
+  uuid: 56a1b253-cde4-490f-9c5e-09a523882bdd
   udp: true
   tls: true
   network: tcp
   flow: xtls-rprx-vision
-  servername: www.amd.com
+  servername: www.tesla.com
   reality-opts:
-    public-key: waNzNRIL_3TaF3UfgeAy1M5r8YVUeOA0nx3jPiXYZSE
-    short-id: e482c0320674c651
+    public-key: JAG5rl6KEt7KAV0y8Z2x6orWHymCXRSX49SkEnEftWU
+    short-id: a56d7d8da977f860
+  client-fingerprint: firefox
+- name: VLESS-04
+  server: 172.233.156.123
+  port: 28396
+  type: vless
+  uuid: 4bd81205-c104-4ee5-8d1a-7f4c458be7a4
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.tesla.com
+  reality-opts:
+    public-key: 4GGEAAeV42G9qjh098cFNm7feTpssWW2vw7gaIY0J0E
+    short-id: 7403a0a9d45e89
+  client-fingerprint: firefox
+- name: VLESS-05
+  server: 204.44.127.222
+  port: 37262
+  type: vless
+  uuid: c8c06f90-c267-47a6-a91a-967e58e61db0
+  udp: true
+  tls: false
+  network: tcp
+  servername: 204.44.127.222
+- name: VLESS-06
+  server: 172.236.252.35
+  port: 46645
+  type: vless
+  uuid: 3b769a8b-1c42-4c1d-9113-f90e81019c42
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.sony.com
+  reality-opts:
+    public-key: eKBdozYN5nEXV3nGPsKSjHkrzc4BsFrOntoq0QsD7hE
+    short-id: 257df5aa7bfbe5c2
   client-fingerprint: chrome
-- name: VLESS-02
+- name: VLESS-07
+  server: 172.235.43.210
+  port: 53957
+  type: vless
+  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.nvidia.com
+  reality-opts:
+    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
+    short-id: 44e82fd7b97b14
+  client-fingerprint: firefox
+- name: VLESS-08
   server: 172.233.156.42
   port: 12668
   type: vless
@@ -38,7 +115,541 @@ proxies:
     public-key: 3sM_YEGrVBcvVyTzs6wes0zYq3GSGYbDfgkseWaYFmU
     short-id: 7403a0a9d45e89
   client-fingerprint: chrome
-- name: VLESS-03
+- name: VLESS-09
+  server: 172.239.67.156
+  port: 26542
+  type: vless
+  uuid: c020a807-16d3-4ad0-99f7-8379421c8b71
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.nvidia.com
+  reality-opts:
+    public-key: my3biw2X9hZxXzrlw5P9aa9PqlCHgqYMaX5QqNSkBAc
+    short-id: 916152c18db147
+  client-fingerprint: firefox
+- name: VLESS-10
+  server: 172.235.38.85
+  port: 42942
+  type: vless
+  uuid: bca46025-bf43-40c0-895b-054a6fbcfd32
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.tesla.com
+  reality-opts:
+    public-key: JmkfJoDWpAqt6gj4cbc4_cwItsdryMlV7joAGfNTKQU
+    short-id: a56d7d8da977f860
+  client-fingerprint: firefox
+- name: VMESS-01
+  server: 82.198.246.250
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: tcp
+  servername: t.me%2Fripaojiedian
+- name: VMESS-02
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: tcp
+  servername: XXXccFrt.922922.ShOP
+- name: VMESS-03
+  server: 82.198.246.37
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: tcp
+  servername: 82.198.246.37
+- name: VLESS-11
+  server: 172.233.156.118
+  port: 29513
+  type: vless
+  uuid: 462d3997-8745-4f4a-ac9a-07349a211cf0
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.sony.com
+  reality-opts:
+    public-key: B6t3rGQObWmOZnhzMwbzbW2cS0xdIgjhpfEWtvhmiSY
+    short-id: eb92ec5ea76bbad2
+  client-fingerprint: firefox
+- name: VLESS-12
+  server: 45.33.62.226
+  port: 56605
+  type: vless
+  uuid: dcb70db5-d6b2-4062-98d7-f81ea3af39d1
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.tesla.com
+  reality-opts:
+    public-key: biUeuKkKsKuFwWF7jvdnkir1Ue1wuS1o_7VdpgEpJnE
+    short-id: 230aab0877ead4af
+  client-fingerprint: firefox
+- name: VLESS-13
+  server: 74.207.245.124
+  port: 39852
+  type: vless
+  uuid: 92c71516-6b46-4e5f-a4be-273d4332d6bb
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.sony.com
+  reality-opts:
+    public-key: aWWrRRoBeajdnbJJpl667pRKgay40Ttq9aVuTxkd_3w
+    short-id: 037ea8353252df
+  client-fingerprint: firefox
+- name: VLESS-14
+  server: 45.79.103.108
+  port: 18828
+  type: vless
+  uuid: 1391b006-8332-4f80-bb1a-b2c1632c086c
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.tesla.com
+  reality-opts:
+    public-key: o8nzDkm9KtsfzDPDvWKNQ7s21HcrKKsMTuqg2VyWmgw
+    short-id: 2576868adedf9fc0
+  client-fingerprint: edge
+- name: VLESS-15
+  server: 172.239.67.231
+  port: 52553
+  type: vless
+  uuid: 4c0cae78-1b6c-4860-8295-d938829f1d64
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.amd.com
+  reality-opts:
+    public-key: 7ettAf7U2AG4PQod_xgNpS6591z6HxjxhEmChKboQRI
+    short-id: 61b89ff3c5a9469a
+  client-fingerprint: firefox
+- name: VLESS-16
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 18f3c22c-27c8-45e8-9ca3-925c98638f66
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-17
+  server: 45.33.107.60
+  port: 10974
+  type: vless
+  uuid: da249715-4a6f-4873-ac3d-260f2b6e0065
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.intel.com
+  reality-opts:
+    public-key: rQHsnXffkul9uYK50Efqzu-KBZ6ZwKNZts86r8u3iEw
+    short-id: a727f329ba2a22
+  client-fingerprint: chrome
+- name: VLESS-18
+  server: 15.204.97.197
+  port: 23576
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: VLESS-19
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 6ae3c57a-f5fb-4b7e-a886-b8c00af5c693
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-20
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 60ed7378-3d79-45af-a13f-2983dd2b524d
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-21
+  server: 173.255.242.56
+  port: 39706
+  type: vless
+  uuid: aab91459-f905-4164-adda-c4ec45578542
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.amd.com
+  reality-opts:
+    public-key: SmWcFiJqTzD74CIIwbK4uckT9u7rpxy_wQ24TlJMphY
+    short-id: 586d60b12e89
+  client-fingerprint: firefox
+- name: VLESS-22
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 17e85193-a95c-4430-9b05-d8f303a34ac3
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-23
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 00dda8ac-c263-4106-a740-1e4478a7dc44
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: chrome
+- name: VLESS-24
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 18841820-cd3a-4bc5-9ac3-fec72438b872
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-25
+  server: 192.81.131.225
+  port: 11256
+  type: vless
+  uuid: 4817e138-8370-4fdd-aa59-36a6ec0247e2
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.tesla.com
+  reality-opts:
+    public-key: TgKDlrMB3_LCRs_WBX4OMnt87rPc4XVqaPhEAtoXhDc
+    short-id: 352a7bbcc1ceeb
+  client-fingerprint: firefox
+- name: VLESS-26
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 06e00e3d-f71f-4621-99a2-779793daf449
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-27
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 22d5930c-6f96-4b77-8f0a-88faca0c9397
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-28
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 72109745-9dbe-42a6-93c7-8b6eeb7aaed3
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-29
+  server: 45.33.62.166
+  port: 43595
+  type: vless
+  uuid: 2642f590-2bce-4031-8f93-7eed983621f5
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.amd.com
+  reality-opts:
+    public-key: waNzNRIL_3TaF3UfgeAy1M5r8YVUeOA0nx3jPiXYZSE
+    short-id: e482c0320674c651
+  client-fingerprint: chrome
+- name: VLESS-30
+  server: 50.116.9.184
+  port: 14009
+  type: vless
+  uuid: d72a2e63-d533-4ddd-8b52-3e44a39a4042
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.tesla.com
+  reality-opts:
+    public-key: 637CtcclHQ2bqoW5TpZWrDnZeNCq8ficaQ3ujRTIfUk
+    short-id: 80d391d659e918
+  client-fingerprint: firefox
+- name: VLESS-31
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 490baab8-71e0-4dbf-9789-5ebc15344c5e
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-32
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 137c30a7-d172-4b6c-a97b-c3a6a4fda042
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VMESS-04
+  server: 216.106.185.141
+  port: 22324
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: tcp
+  servername: 216.106.185.141
+- name: VLESS-33
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 0817a3bb-c8fb-4ddf-a05e-321565b39cd8
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-34
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 7f111a18-3773-4dec-8528-fc747a17e5ae
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-35
+  server: 45.33.107.237
+  port: 51486
+  type: vless
+  uuid: 72e4f3f6-3382-4a68-9817-8d65927e9bbd
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.nvidia.com
+  reality-opts:
+    public-key: UB7YAOLuxMOFBejs3SSOIaiYCYk2X4UZH5j9iWbbIS4
+    short-id: 2576868adedf9fc0
+  client-fingerprint: chrome
+- name: VLESS-36
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 72d995a9-df53-4e8e-a8b6-e83f3a7d08ea
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-37
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 6fba61f2-d538-4bba-8c86-b19568a0b687
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-38
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 5c31ca5d-0094-4a7e-a06e-7f2ce96e44db
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-39
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 1925051c-083e-401a-8f53-de39d83bfc94
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-40
+  server: 173.230.155.55
+  port: 50900
+  type: vless
+  uuid: 2c082e78-bd9d-4960-b9f3-cde0040cb4f3
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.amd.com
+  reality-opts:
+    public-key: vdE4t2bYhYun6fZ9Weu_f6MXtsmq8iJ7XQBUj62scR0
+    short-id: 12fa394e28d52011
+  client-fingerprint: chrome
+- name: VLESS-41
+  server: 192.155.87.188
+  port: 10092
+  type: vless
+  uuid: a0b4d03b-b561-46aa-96f6-d03fa222a65e
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.amd.com
+  reality-opts:
+    public-key: EUpz9wKWgGn74jxYUKDbk87UwDGEYeCiaZg13m36ki0
+    short-id: e482c0320674c651
+  client-fingerprint: firefox
+- name: VLESS-42
+  server: 216.167.21.32
+  port: 40573
+  type: vless
+  uuid: 095d1015-70da-4eff-af6d-962ff619a679
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.tesla.com
+  reality-opts:
+    public-key: aqAR_yPgXQtOazW4nR1Q5RmGIVLQ5TV2ztUWmsjSFVw
+    short-id: 2012d3de918e0d20
+  client-fingerprint: chrome
+- name: VLESS-43
+  server: 31.58.50.200
+  port: 8443
+  type: vless
+  uuid: 1837e910-ebd6-4e64-a9ae-7c9779e4d60d
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: tradingview.com
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
+- name: VLESS-44
   server: 173.255.242.235
   port: 23776
   type: vless
@@ -52,58 +663,34 @@ proxies:
     public-key: rDDl9UktPqt5eBQtF_0npmVNjatgwmUc5QLcaI9LVjE
     short-id: 5fa3f40a7cf1b9
   client-fingerprint: chrome
-- name: VLESS-04
-  server: mn8.levikogjgfdd.ir
-  port: 10974
+- name: VLESS-45
+  server: 216.167.21.162
+  port: 39035
   type: vless
-  uuid: da249715-4a6f-4873-ac3d-260f2b6e0065
+  uuid: 5e130ea4-8a35-43b3-809a-b33b4bf15d2a
   udp: true
   tls: true
   network: tcp
   flow: xtls-rprx-vision
-  servername: www.intel.com
+  servername: www.tesla.com
   reality-opts:
-    public-key: rQHsnXffkul9uYK50Efqzu-KBZ6ZwKNZts86r8u3iEw
-    short-id: a727f329ba2a22
-  client-fingerprint: chrome
-- name: VLESS-05
-  server: 15.204.97.206
-  port: 23576
+    public-key: iDi_qBUd7W0hkodhE-RCnOY9-RwD3C7acLQAV-abrwQ
+    short-id: 3f88951857dd6d
+  client-fingerprint: firefox
+- name: VLESS-46
+  server: 31.58.50.200
+  port: 8443
   type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: 11cf4be2-8e22-410b-ac9f-c389d2b2e1cd
   udp: true
   tls: true
   network: tcp
   flow: xtls-rprx-vision
-  servername: fuck.rkn
+  servername: tradingview.com
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: VLESS-06
-  server: 38.107.236.178
-  port: 443
-  type: vless
-  uuid: fda82db3-3c0f-4122-87d9-1ed08059bc92
-  udp: true
-  tls: false
-  network: ws
-  servername: us3.lunariai.ru
-  ws-opts:
-    path: /
-    headers:
-      Host: us3.lunariai.ru
-- name: VMESS-01
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: tcp
-  servername: sni.111000.indevs.in
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+    short-id: ''
+  client-fingerprint: firefox
 proxy-groups:
 - name: 📸 Instagram
   type: url-test
@@ -117,7 +704,50 @@ proxy-groups:
   - VLESS-04
   - VLESS-05
   - VLESS-06
+  - VLESS-07
+  - VLESS-08
+  - VLESS-09
+  - VLESS-10
   - VMESS-01
+  - VMESS-02
+  - VMESS-03
+  - VLESS-11
+  - VLESS-12
+  - VLESS-13
+  - VLESS-14
+  - VLESS-15
+  - VLESS-16
+  - VLESS-17
+  - VLESS-18
+  - VLESS-19
+  - VLESS-20
+  - VLESS-21
+  - VLESS-22
+  - VLESS-23
+  - VLESS-24
+  - VLESS-25
+  - VLESS-26
+  - VLESS-27
+  - VLESS-28
+  - VLESS-29
+  - VLESS-30
+  - VLESS-31
+  - VLESS-32
+  - VMESS-04
+  - VLESS-33
+  - VLESS-34
+  - VLESS-35
+  - VLESS-36
+  - VLESS-37
+  - VLESS-38
+  - VLESS-39
+  - VLESS-40
+  - VLESS-41
+  - VLESS-42
+  - VLESS-43
+  - VLESS-44
+  - VLESS-45
+  - VLESS-46
 - name: ✈️ Telegram
   type: url-test
   url: https://web.telegram.org
@@ -130,7 +760,50 @@ proxy-groups:
   - VLESS-04
   - VLESS-05
   - VLESS-06
+  - VLESS-07
+  - VLESS-08
+  - VLESS-09
+  - VLESS-10
   - VMESS-01
+  - VMESS-02
+  - VMESS-03
+  - VLESS-11
+  - VLESS-12
+  - VLESS-13
+  - VLESS-14
+  - VLESS-15
+  - VLESS-16
+  - VLESS-17
+  - VLESS-18
+  - VLESS-19
+  - VLESS-20
+  - VLESS-21
+  - VLESS-22
+  - VLESS-23
+  - VLESS-24
+  - VLESS-25
+  - VLESS-26
+  - VLESS-27
+  - VLESS-28
+  - VLESS-29
+  - VLESS-30
+  - VLESS-31
+  - VLESS-32
+  - VMESS-04
+  - VLESS-33
+  - VLESS-34
+  - VLESS-35
+  - VLESS-36
+  - VLESS-37
+  - VLESS-38
+  - VLESS-39
+  - VLESS-40
+  - VLESS-41
+  - VLESS-42
+  - VLESS-43
+  - VLESS-44
+  - VLESS-45
+  - VLESS-46
 - name: 🇽 X
   type: url-test
   url: https://x.com/favicon.ico
@@ -143,7 +816,49 @@ proxy-groups:
   - VLESS-04
   - VLESS-05
   - VLESS-06
-  - VMESS-01
+  - VLESS-07
+  - VLESS-08
+  - VLESS-09
+  - VLESS-10
+  - VMESS-02
+  - VMESS-03
+  - VLESS-11
+  - VLESS-12
+  - VLESS-13
+  - VLESS-14
+  - VLESS-15
+  - VLESS-16
+  - VLESS-17
+  - VLESS-18
+  - VLESS-19
+  - VLESS-20
+  - VLESS-21
+  - VLESS-22
+  - VLESS-23
+  - VLESS-24
+  - VLESS-25
+  - VLESS-26
+  - VLESS-27
+  - VLESS-28
+  - VLESS-29
+  - VLESS-30
+  - VLESS-31
+  - VLESS-32
+  - VMESS-04
+  - VLESS-33
+  - VLESS-34
+  - VLESS-35
+  - VLESS-36
+  - VLESS-37
+  - VLESS-38
+  - VLESS-39
+  - VLESS-40
+  - VLESS-41
+  - VLESS-42
+  - VLESS-43
+  - VLESS-44
+  - VLESS-45
+  - VLESS-46
 - name: 🤖 AI
   type: url-test
   url: https://chatgpt.com/favicon.ico
@@ -156,7 +871,50 @@ proxy-groups:
   - VLESS-04
   - VLESS-05
   - VLESS-06
+  - VLESS-07
+  - VLESS-08
+  - VLESS-09
+  - VLESS-10
   - VMESS-01
+  - VMESS-02
+  - VMESS-03
+  - VLESS-11
+  - VLESS-12
+  - VLESS-13
+  - VLESS-14
+  - VLESS-15
+  - VLESS-16
+  - VLESS-17
+  - VLESS-18
+  - VLESS-19
+  - VLESS-20
+  - VLESS-21
+  - VLESS-22
+  - VLESS-23
+  - VLESS-24
+  - VLESS-25
+  - VLESS-26
+  - VLESS-27
+  - VLESS-28
+  - VLESS-29
+  - VLESS-30
+  - VLESS-31
+  - VLESS-32
+  - VMESS-04
+  - VLESS-33
+  - VLESS-34
+  - VLESS-35
+  - VLESS-36
+  - VLESS-37
+  - VLESS-38
+  - VLESS-39
+  - VLESS-40
+  - VLESS-41
+  - VLESS-42
+  - VLESS-43
+  - VLESS-44
+  - VLESS-45
+  - VLESS-46
 - name: 📺 YouTube
   type: url-test
   url: http://www.youtube.com/generate_204
@@ -169,7 +927,50 @@ proxy-groups:
   - VLESS-04
   - VLESS-05
   - VLESS-06
+  - VLESS-07
+  - VLESS-08
+  - VLESS-09
+  - VLESS-10
   - VMESS-01
+  - VMESS-02
+  - VMESS-03
+  - VLESS-11
+  - VLESS-12
+  - VLESS-13
+  - VLESS-14
+  - VLESS-15
+  - VLESS-16
+  - VLESS-17
+  - VLESS-18
+  - VLESS-19
+  - VLESS-20
+  - VLESS-21
+  - VLESS-22
+  - VLESS-23
+  - VLESS-24
+  - VLESS-25
+  - VLESS-26
+  - VLESS-27
+  - VLESS-28
+  - VLESS-29
+  - VLESS-30
+  - VLESS-31
+  - VLESS-32
+  - VMESS-04
+  - VLESS-33
+  - VLESS-34
+  - VLESS-35
+  - VLESS-36
+  - VLESS-37
+  - VLESS-38
+  - VLESS-39
+  - VLESS-40
+  - VLESS-41
+  - VLESS-42
+  - VLESS-43
+  - VLESS-44
+  - VLESS-45
+  - VLESS-46
 - name: 🌐 Others
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -182,7 +983,50 @@ proxy-groups:
   - VLESS-04
   - VLESS-05
   - VLESS-06
+  - VLESS-07
+  - VLESS-08
+  - VLESS-09
+  - VLESS-10
   - VMESS-01
+  - VMESS-02
+  - VMESS-03
+  - VLESS-11
+  - VLESS-12
+  - VLESS-13
+  - VLESS-14
+  - VLESS-15
+  - VLESS-16
+  - VLESS-17
+  - VLESS-18
+  - VLESS-19
+  - VLESS-20
+  - VLESS-21
+  - VLESS-22
+  - VLESS-23
+  - VLESS-24
+  - VLESS-25
+  - VLESS-26
+  - VLESS-27
+  - VLESS-28
+  - VLESS-29
+  - VLESS-30
+  - VLESS-31
+  - VLESS-32
+  - VMESS-04
+  - VLESS-33
+  - VLESS-34
+  - VLESS-35
+  - VLESS-36
+  - VLESS-37
+  - VLESS-38
+  - VLESS-39
+  - VLESS-40
+  - VLESS-41
+  - VLESS-42
+  - VLESS-43
+  - VLESS-44
+  - VLESS-45
+  - VLESS-46
 - name: 🌍 Iran Direct
   type: select
   proxies:
