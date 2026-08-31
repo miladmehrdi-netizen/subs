@@ -38,6 +38,72 @@ proxies:
     public-key: 3sM_YEGrVBcvVyTzs6wes0zYq3GSGYbDfgkseWaYFmU
     short-id: 7403a0a9d45e89
   client-fingerprint: chrome
+- name: VLESS-03
+  server: 173.255.242.235
+  port: 23776
+  type: vless
+  uuid: 5086262e-8381-483d-bc2e-d6867439928e
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.intel.com
+  reality-opts:
+    public-key: rDDl9UktPqt5eBQtF_0npmVNjatgwmUc5QLcaI9LVjE
+    short-id: 5fa3f40a7cf1b9
+  client-fingerprint: chrome
+- name: VLESS-04
+  server: mn8.levikogjgfdd.ir
+  port: 10974
+  type: vless
+  uuid: da249715-4a6f-4873-ac3d-260f2b6e0065
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.intel.com
+  reality-opts:
+    public-key: rQHsnXffkul9uYK50Efqzu-KBZ6ZwKNZts86r8u3iEw
+    short-id: a727f329ba2a22
+  client-fingerprint: chrome
+- name: VLESS-05
+  server: 15.204.97.206
+  port: 23576
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: VLESS-06
+  server: 38.107.236.178
+  port: 443
+  type: vless
+  uuid: fda82db3-3c0f-4122-87d9-1ed08059bc92
+  udp: true
+  tls: false
+  network: ws
+  servername: us3.lunariai.ru
+  ws-opts:
+    path: /
+    headers:
+      Host: us3.lunariai.ru
+- name: VMESS-01
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: tcp
+  servername: sni.111000.indevs.in
 proxy-groups:
 - name: 📸 Instagram
   type: url-test
@@ -47,6 +113,11 @@ proxy-groups:
   proxies:
   - VLESS-01
   - VLESS-02
+  - VLESS-03
+  - VLESS-04
+  - VLESS-05
+  - VLESS-06
+  - VMESS-01
 - name: ✈️ Telegram
   type: url-test
   url: https://web.telegram.org
@@ -55,6 +126,11 @@ proxy-groups:
   proxies:
   - VLESS-01
   - VLESS-02
+  - VLESS-03
+  - VLESS-04
+  - VLESS-05
+  - VLESS-06
+  - VMESS-01
 - name: 🇽 X
   type: url-test
   url: https://x.com/favicon.ico
@@ -63,6 +139,11 @@ proxy-groups:
   proxies:
   - VLESS-01
   - VLESS-02
+  - VLESS-03
+  - VLESS-04
+  - VLESS-05
+  - VLESS-06
+  - VMESS-01
 - name: 🤖 AI
   type: url-test
   url: https://chatgpt.com/favicon.ico
@@ -71,6 +152,11 @@ proxy-groups:
   proxies:
   - VLESS-01
   - VLESS-02
+  - VLESS-03
+  - VLESS-04
+  - VLESS-05
+  - VLESS-06
+  - VMESS-01
 - name: 📺 YouTube
   type: url-test
   url: http://www.youtube.com/generate_204
@@ -79,6 +165,11 @@ proxy-groups:
   proxies:
   - VLESS-01
   - VLESS-02
+  - VLESS-03
+  - VLESS-04
+  - VLESS-05
+  - VLESS-06
+  - VMESS-01
 - name: 🌐 Others
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -87,6 +178,11 @@ proxy-groups:
   proxies:
   - VLESS-01
   - VLESS-02
+  - VLESS-03
+  - VLESS-04
+  - VLESS-05
+  - VLESS-06
+  - VMESS-01
 - name: 🌍 Iran Direct
   type: select
   proxies:
