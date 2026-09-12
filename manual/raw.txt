@@ -8,3 +8,16 @@ vless://5e3f974b-06fc-4555-907a-6681391b7c17@186.246.19.79:40443/?type=tcp&encry
 ss://YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0@15.204.233.41:8882#%F0%9F%87%BA%F0%9F%87%B8%20SS
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZTczMWVjMy1mOGUxLTQzZjYtOTJjZi0zOTc4ZDE0NzA1YzQ@36.224.174.174:50099#%F0%9F%87%B9%F0%9F%87%BC%20SS
 vless://661f395d-b153-4199-a04b-693f5fe7f261@158.69.112.254:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.speedtest.net&fp=chrome&security=reality&pbk=wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y&sid=3d3c1e645f763ee3#%F0%9F%87%A8%F0%9F%87%A6%20VLESS
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZTczMWVjMy1mOGUxLTQzZjYtOTJjZi0zOTc4ZDE0NzA1YzQ@36.224.174.174:50099#%F0%9F%87%B9%F0%9F%87%BC%20SS
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVOVlBb3FCZ2c1VnlHQmM2dlF2MXNO@194.61.121.93:7538#%F0%9F%87%B5%F0%9F%87%B1%20SS
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@51.83.192.80:8388#%F0%9F%87%B5%F0%9F%87%B1%20SS%20%281%29
+trojan://humanity@8.47.69.0:443/?type=ws&host=www.pleadcourt.org&path=%2Fassignment&security=tls&sni=www.pleadcourt.org&alpn=http%2F1.1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20TROJAN%20%281%29
+vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.89:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yahoo.com&security=reality&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&sid=c39cc7310a#%F0%9F%87%BA%F0%9F%87%B8%20VLESS%20%282%29
+vless://e5cc16a6-ea42-46b2-82ae-ad2157e1641b@172.64.150.28:2082/?type=ws&encryption=none&flow=&host=hhlfy.twiladaphne.ndjp.net&path=%2Ffp#%F0%9F%87%A8%F0%9F%87%A6%20VLESS%20%287%29
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.190:8080#%F0%9F%87%B3%F0%9F%87%B1%20SS%20%287%29
+vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@144.31.5.64:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&security=tls&sni=pl6.moritech.net&alpn=h2&fp=firefox#%F0%9F%87%B5%F0%9F%87%B1%20VLESS
+vless://de5906f3-df38-4463-aa9d-2b01320cc6ea@31.76.76.28:443/?type=ws&encryption=none&flow=&host=31.76.76.28&path=%2F#%F0%9F%87%B3%F0%9F%87%B1%20VLESS%20%2814%29
+vless://bf443e4a-aa9e-4509-abf0-d0f6828d57be@178.95.170.115:2087/?type=ws&encryption=none&flow=&path=%2F4bc027a44532#%F0%9F%87%B5%F0%9F%87%B1%20VLESS%20%282%29
+vless://bf443e4a-aa9e-4509-abf0-d0f6828d57be@178.95.170.98:2087/?type=ws&encryption=none&flow=&path=%2F4bc027a44532#%F0%9F%87%B5%F0%9F%87%B1%20VLESS%20%283%29
+vless://894fe9f0-b998-49c0-8003-a5007de921e1@189.74.97.47:2087/?type=ws&encryption=none&flow=&path=%2F755276b33b6f#%F0%9F%87%BA%F0%9F%87%BF%20VLESS
+vless://c21631d5-36c9-4664-b575-97eca17456be@2.27.205.59:443/?type=ws&encryption=none&flow=&path=%2F#%F0%9F%87%A9%F0%9F%87%AA%20VLESS%20%2821%29
