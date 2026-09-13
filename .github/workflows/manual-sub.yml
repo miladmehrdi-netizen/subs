@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - "manual/raw.txt"
+  schedule:
+    - cron: "0 */6 * * *"   # هر ۶ ساعت، حتی اگه raw.txt عوض نشده باشه
   workflow_dispatch: {}
 
 permissions:
@@ -24,14 +26,26 @@ jobs:
       - name: Install Python deps
         run: pip install requests
 
+      - name: Download sing-box
+        run: |
+          set -e
+          URL=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases/latest \
+            | grep "browser_download_url.*linux-amd64.tar.gz" \
+            | cut -d '"' -f 4)
+          curl -L -o singbox.tar.gz "$URL"
+          tar xzf singbox.tar.gz
+          BIN=$(find . -maxdepth 2 -type f -name "sing-box" | head -n1)
+          mv "$BIN" ./sing-box
+          chmod +x ./sing-box
+
       - name: Run rename script
-        run: python manual/rename.py
+        run: python manual/rename.py --sing-box ./sing-box
 
       - name: Commit updated manual/sub.txt
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f manual/sub.txt
+          git add manual/sub.txt
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "manual sub: rename update $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
           git push origin main
