@@ -5,7 +5,7 @@ on:
     paths:
       - "manual/raw.txt"
   schedule:
-    - cron: "0 */6 * * *"   # هر ۶ ساعت، حتی اگه raw.txt عوض نشده باشه
+    - cron: "0 */2 * * *"   # هر ۶ ساعت، حتی اگه raw.txt عوض نشده باشه
   workflow_dispatch: {}
 
 permissions:
