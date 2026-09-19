@@ -40,7 +40,7 @@ CUSTOM_LABEL = "کانفیگ های عمومی و رایگان"
 # سایت ایرانی که برای تست پینگ استفاده می‌شه (هر آدرس دیگه‌ای هم بخوای همینجا عوضش کن)
 IRAN_TEST_URL = "https://www.digikala.com"
 GENERAL_TEST_URL = "http://www.gstatic.com/generate_204"
-TOP_N = 5
+TOP_N = 7
 # --------------------------------------------------------------------
 
 CLASH_API = "http://127.0.0.1:9090"
