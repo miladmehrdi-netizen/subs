@@ -10,62 +10,8 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: 🇺🇸 SS-01
-  server: 156.146.38.169
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 SS-02
-  server: 156.146.38.170
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 SS-03
-  server: 66.23.201.174
-  port: 10274
-  type: ss
-  cipher: aes-128-gcm
-  password: 6c4993acd1ca7f12f0a18bdcb3c37c6c
-  udp: true
-- name: 🇺🇸 VLESS-01
-  server: 162.159.254.201
-  port: 443
-  type: vless
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  network: ws
-  servername: edgetunnel-4uw.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇨🇦 VLESS-02
-  server: 172.64.154.8
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 SS-04
-  server: 156.146.38.168
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: 🇺🇸 VMESS-01
-  server: 167.88.62.124
+  server: 169.197.143.116
   port: 22324
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
@@ -74,552 +20,21 @@ proxies:
   udp: true
   tls: false
   network: tcp
-  servername: 167.88.62.124
-- name: 🇨🇦 VLESS-03
-  server: 172.64.150.28
-  port: 2082
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  network: ws
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇺🇸 SS-05
-  server: 156.146.38.167
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇨🇦 VLESS-04
-  server: 172.64.150.28
-  port: 2082
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  network: ws
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇺🇸 VMESS-02
-  server: 47.85.188.30
-  port: 12004
-  type: vmess
-  uuid: 8b5552bd-4cc7-4cac-af08-81c21686fd4f
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: tcp
-  servername: 47.85.188.30
-- name: 🇺🇸 SS-06
-  server: 198.98.53.130
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-  udp: true
-- name: 🇨🇦 VLESS-05
-  server: 162.159.43.187
-  port: 2086
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 TROJAN-01
-  server: 167.82.76.7
+  servername: 169.197.143.116
+- name: 🇨🇦 TROJAN-01
+  server: 172.67.177.105
   port: 443
   type: trojan
-  password: mitivpn
+  password: 0b5fa773-6f37-4134-87d4-0c349742b6f6
   udp: true
-  sni: ssl.fastly.com
+  sni: app-538961.user-y0o4gm.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /cmh
     headers:
-      Host: mitivpn---us--s---mitivpn-11.global.ssl.fastly.net
-- name: 🇨🇦 VLESS-06
-  server: 172.64.229.170
-  port: 80
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇦 VLESS-07
-  server: abctest.8rm.net
-  port: 443
-  type: vless
-  uuid: 351c9981-04b6-4103-aa4b-864aa9c91469
-  udp: true
-  tls: true
-  network: ws
-  servername: abctest.8rm.net
-  ws-opts:
-    path: /
-    headers:
-      Host: abctest.8rm.net
-- name: 🇺🇸 VLESS-08
-  server: 162.35.104.143
-  port: 443
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  udp: true
-  tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: sheetpeek.com
-  reality-opts:
-    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
-    short-id: 84be686ea1d16478
-  client-fingerprint: firefox
-- name: 🇨🇦 VLESS-09
-  server: 188.114.97.6
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 SS-07
-  server: 37.19.198.160
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 SS-08
-  server: 37.19.198.243
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇨🇦 VLESS-10
-  server: 188.114.97.6
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 VLESS-11
-  server: 108.162.198.178
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇦 VLESS-12
-  server: 172.64.154.8
-  port: 8880
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 SS-09
-  server: 140.82.63.79
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ZoZtfPOyVvmKARUN
-  udp: true
-- name: 🇺🇸 SS-10
-  server: 54.234.217.115
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇺🇸 VLESS-13
-  server: 185.95.231.233
-  port: 443
-  type: vless
-  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
-  udp: true
-  tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: store.steampowered.com
-  reality-opts:
-    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
-    short-id: a1b2c3d4
-  client-fingerprint: chrome
-- name: 🇨🇦 VLESS-14
-  server: 188.114.97.6
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 VMESS-03
-  server: 66.163.115.23
-  port: 443
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  servername: 66.163.115.23
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: 66.163.115.23
-- name: 🇺🇸 SS-11
-  server: 37.19.198.236
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 SS-12
-  server: 37.19.198.244
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 VLESS-15
-  server: 108.162.198.178
-  port: 80
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 VLESS-16
-  server: 159.89.87.21
-  port: 28190
-  type: vless
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
-  udp: true
-  tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: aws.amazon.com
-  reality-opts:
-    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-    short-id: ''
-  client-fingerprint: chrome
-- name: 🇨🇦 SS-13
-  server: 64.74.161.148
-  port: 17201
-  type: ss
-  cipher: aes-128-gcm
-  password: 1cbb3e347ee86e1980a7c731e9dd00a0
-  udp: true
-- name: 🇨🇦 VLESS-17
-  server: 140.238.144.211
-  port: 443
-  type: vless
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  network: ws
-  servername: shephe.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇺🇸 TROJAN-02
-  server: 199.232.78.160
-  port: 443
-  type: trojan
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---us--s---mitivpn-11.global.ssl.fastly.net
-- name: 🇺🇸 VLESS-18
-  server: 108.162.198.178
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 HYSTERIA2-01
-  server: 155.248.209.237
-  port: 33333
-  type: hysteria2
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  sni: 155.248.209.237
-  skip-cert-verify: true
-- name: 🇺🇸 HYSTERIA2-02
-  server: hy2.123266.xyz
-  port: 33333
-  type: hysteria2
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  sni: hy2.123266.xyz
-  skip-cert-verify: true
-- name: 🇺🇸 VLESS-19
-  server: 162.35.104.144
-  port: 8081
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  udp: true
-  tls: false
-  network: ws
-  servername: 162.35.104.144
-  ws-opts:
-    path: /vless-test
-    headers:
-      Host: 162.35.104.144
-- name: 🇨🇦 VMESS-04
-  server: mygptagent.org
-  port: 443
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  servername: mygptagent.org
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇺🇸 SS-14
-  server: 173.234.25.90
-  port: 15240
-  type: ss
-  cipher: aes-128-gcm
-  password: 62dd75ba944947d4ca983cf1679b3797
-  udp: true
-- name: 🇺🇸 VLESS-20
-  server: ww9.levikogjgfdd.ir
-  port: 36925
-  type: vless
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  udp: true
-  tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-    short-id: ''
-  client-fingerprint: chrome
-- name: 🇺🇸 TROJAN-03
-  server: 167.82.76.7
-  port: 443
-  type: trojan
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSs---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
-    headers:
-      Host: mitivpn---us--s---mitivpn-11.global.ssl.fastly.net
-- name: 🇺🇸 VLESS-21
-  server: 108.162.198.178
-  port: 8880
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 TROJAN-04
-  server: 199.232.78.101
-  port: 443
-  type: trojan
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: '@mehrosabiran'
-    headers:
-      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
-- name: 🇨🇦 VLESS-22
-  server: 188.114.97.6
-  port: 2086
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 VLESS-23
-  server: 104.21.5.115
-  port: 443
-  type: vless
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  network: ws
-  servername: edgetunnel-4uw.pages.dev
-  ws-opts:
-    path: /?TELEGRAM--ICV2RAY--ICV2RAY?ed=512
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇺🇸 TROJAN-05
-  server: 199.232.78.160
-  port: 443
-  type: trojan
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/D-e1i@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
-    headers:
-      Host: mitivpn---us--s---mitivpn-11.global.ssl.fastly.net
-- name: 🇺🇸 TROJAN-06
-  server: 199.232.78.188
-  port: 443
-  type: trojan
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: mitivpn---gb--s---mitivpn-1.global.ssl.fastly.net
-- name: 🇨🇦 VLESS-24
-  server: 188.114.97.6
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 SS-15
-  server: 129.146.60.110
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rn3fzP+5S/uNM95/6uQr3rQEowZWgWUG3e2f853i1Ww=
-  udp: true
-- name: 🇺🇸 SS-16
-  server: 129.146.164.199
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: oPlv4+8UGEF0KZ5f4kDFxpvV5SsW+3veVs23YwxFmBk=
-  udp: true
-- name: 🇺🇸 HYSTERIA2-03
-  server: 142.249.37.90
-  port: 44356
-  type: hysteria2
-  password: dongtaiwang.com
-  sni: hy2.561891.xyz
-  skip-cert-verify: true
-- name: 🇺🇸 SS-17
-  server: 129.146.63.176
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 51+j0f1sGG8aVSYp0xZndUB2C/cmrUeGq7BYOKpcI/o=
-  udp: true
-- name: 🇺🇸 VLESS-25
-  server: 108.162.198.178
-  port: 2086
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  network: ws
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 VMESS-05
-  server: 129.146.77.248
-  port: 39495
-  type: vmess
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: 129.146.77.248
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: 🇺🇸 VMESS-06
-  server: 167.17.68.89
+      Host: app-538961.user-y0o4gm.workers.dev
+- name: 🇨🇦 VMESS-02
+  server: 158.51.123.42
   port: 22324
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
@@ -628,78 +43,41 @@ proxies:
   udp: true
   tls: false
   network: tcp
-  servername: 167.17.68.89
-- name: 🇺🇸 SS-18
-  server: 103.214.108.219
-  port: 17521
-  type: ss
-  cipher: aes-128-gcm
-  password: 1683551eae4eeaba5db807ea26eb1204
-  udp: true
-- name: 🇺🇸 SS-19
-  server: 129.146.56.197
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7V16oHuTUxMQAfyrAro/m7NXdWktRoYZvIcoV7E0eHE=
-  udp: true
-- name: 🇺🇸 SS-20
-  server: 129.146.38.157
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: wfjlerxqgV1dNYGC7TGrQDmy4VFsKwyilqc5uewzCJo=
-  udp: true
-- name: 🇺🇸 SS-21
-  server: 173.244.56.6
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇨🇦 VLESS-26
-  server: 158.69.112.254
+  servername: 158.51.123.42
+- name: 🇨🇦 VLESS-01
+  server: 104.25.146.77
   port: 443
   type: vless
-  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
   tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: www.speedtest.net
-  reality-opts:
-    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
-    short-id: 3d3c1e645f763ee3
-  client-fingerprint: chrome
-- name: 🇺🇸 SS-22
-  server: 15.204.233.41
-  port: 8882
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇺🇸 HYSTERIA2-04
-  server: 159.223.157.129
-  port: 8443
-  type: hysteria2
-  password: suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g
-  sni: 159.223.157.129
-  skip-cert-verify: true
-- name: 🇺🇸 SS-23
-  server: 129.146.38.47
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9Biq/bLYu1Dmcuj4yhbtgnOVwa2pzAUAK0kPEL2FOJY=
-  udp: true
-- name: 🇺🇸 TROJAN-07
-  server: 43.173.90.202
+  network: ws
+  servername: khoda.ak-khoda.workers.dev
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇺🇸 VLESS-02
+  server: 208.103.161.5
   port: 443
-  type: trojan
-  password: sg-trojan-2026
+  type: vless
+  uuid: d042a74a-c305-4eec-a89f-39a348022c92
   udp: true
-  sni: sg-proxy.local
-- name: 🇺🇸 VLESS-27
+  tls: true
+  network: ws
+  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+- name: 🇺🇸 SS-01
+  server: 5.78.51.123
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 8tmnvX5zYuWGVIDP2jglZw
+  udp: true
+- name: 🇺🇸 VLESS-03
   server: 51.81.203.63
   port: 443
   type: vless
@@ -713,21 +91,286 @@ proxies:
     public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
     short-id: 4477382ff6d3d41c
   client-fingerprint: chrome
-- name: 🇺🇸 SS-24
-  server: 5.78.51.123
-  port: 1080
+- name: 🇨🇦 SS-02
+  server: 149.22.95.183
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇨🇦 VLESS-04
+  server: 104.24.204.221
+  port: 443
+  type: vless
+  uuid: 307ff98e-041b-2a08-235a-4ff61316b090
+  udp: true
+  tls: true
+  network: ws
+  servername: yellow-king-ecd7.nsyrayyly2.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: yellow-king-ecd7.nsyrayyly2.workers.dev
+- name: 🇺🇸 SS-03
+  server: ss.044.node-for-bigairport.win
+  port: 20006
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 8tmnvX5zYuWGVIDP2jglZw
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
   udp: true
-- name: 🇺🇸 SS-25
-  server: 192.3.247.109
-  port: 43579
+- name: 🇺🇸 VLESS-05
+  server: tk1.high-speed-test-56424.me
+  port: 443
+  type: vless
+  uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: aws.amazon.com
+  reality-opts:
+    public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
+    short-id: 21270a66
+  client-fingerprint: chrome
+- name: 🇨🇦 VLESS-06
+  server: 172.67.134.136
+  port: 443
+  type: vless
+  uuid: fa45096d-bed0-ad80-c773-23c300000003
+  udp: true
+  tls: true
+  network: ws
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇨🇦 VLESS-07
+  server: 172.67.155.222
+  port: 443
+  type: vless
+  uuid: 82b279c6-5cba-3a96-f8bd-780a00000035
+  udp: true
+  tls: true
+  network: ws
+  servername: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+  ws-opts:
+    path: /sync
+    headers:
+      Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+- name: 🇨🇦 VLESS-08
+  server: 188.114.97.6
+  port: 8080
+  type: vless
+  uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
+  udp: true
+  tls: false
+  network: ws
+  servername: shrill-recipe-0c1d.404-a1d.workers.dev
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: shrill-recipe-0c1d.404-a1d.workers.dev
+- name: 🇨🇦 VLESS-09
+  server: 172.67.209.13
+  port: 443
+  type: vless
+  uuid: fa45096d-bed0-ad80-c773-23c30000001b
+  udp: true
+  tls: true
+  network: ws
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  ws-opts:
+    path: /sync
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇨🇦 VLESS-10
+  server: test.ghwhdr51.workers.dev
+  port: 443
+  type: vless
+  uuid: b8875d59-7568-4041-829a-cc6c82b70022
+  udp: true
+  tls: true
+  network: ws
+  servername: test.ghwhdr51.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: test.ghwhdr51.workers.dev
+- name: 🇨🇦 VLESS-11
+  server: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
+  port: 443
+  type: vless
+  uuid: 0b41f339-5809-46ef-8351-b03fdc441539
+  udp: true
+  tls: true
+  network: ws
+  servername: FpoiXF69hQT3E6d4URTB.MamADNEIZeH.WorKers.DEV
+  ws-opts:
+    path: /vl/lYNtP7z8pJUmfp01tz5wEnuDujJtZ
+    headers:
+      Host: FpoiXF69hQT3E6d4URTB.MamADNEIZeH.WorKers.DEV
+- name: 🇨🇦 TROJAN-02
+  server: 104.21.43.90
+  port: 443
+  type: trojan
+  password: 0b5fa773-6f37-4134-87d4-0c349742b6f6
+  udp: true
+  sni: app-538961.user-y0o4gm.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: app-538961.user-y0o4gm.workers.dev
+- name: 🇨🇦 VLESS-12
+  server: 188.114.97.6
+  port: 8080
+  type: vless
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: false
+  network: ws
+  servername: khoda.ak-khoda.workers.dev
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇺🇸 VLESS-13
+  server: us-1.gsafevpnapi.com
+  port: 20270
+  type: vless
+  uuid: d6fc32ed-05de-430b-99ca-3edc9185e79b
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: eadapatOPUV75uDTLPqrRHD1vAAmu_Y-SyQCbp9wgwM
+    short-id: f7a0cd272f3f20a7
+  client-fingerprint: chrome
+- name: 🇺🇸 HYSTERIA2-01
+  server: hy2.123266.xyz
+  port: 33333
+  type: hysteria2
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: hy2.123266.xyz
+  skip-cert-verify: true
+- name: 🇺🇸 HYSTERIA2-02
+  server: 155.248.209.237
+  port: 33333
+  type: hysteria2
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: 155.248.209.237
+  skip-cert-verify: true
+- name: 🇺🇸 TROJAN-03
+  server: 34.94.125.227
+  port: 443
+  type: trojan
+  password: M7v%w11Se*
+  udp: true
+  sni: mxlo.wsone.icu
+- name: 🇺🇸 VLESS-14
+  server: 47.251.108.158
+  port: 443
+  type: vless
+  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
+  udp: true
+  tls: true
+  network: raw
+  flow: xtls-rprx-vision
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
+    short-id: 896f52ba2cfca903
+  client-fingerprint: chrome
+- name: 🇺🇸 SS-04
+  server: 108.181.118.10
+  port: 8388
   type: ss
-  cipher: aes-256-gcm
-  password: 8c009bb6-08b3-4526-a86b-5af7ddfc567a-4c757b72-6eec-4faf-8c2e-09fd1c7fa936
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
   udp: true
-- name: 🇺🇸 VMESS-07
+- name: 🇺🇸 SS-05
+  server: 173.234.25.90
+  port: 15240
+  type: ss
+  cipher: aes-128-gcm
+  password: 62dd75ba944947d4ca983cf1679b3797
+  udp: true
+- name: 🇨🇦 VLESS-15
+  server: 104.21.88.201
+  port: 443
+  type: vless
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  udp: true
+  tls: true
+  network: ws
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
+  ws-opts:
+    path: /cmh
+    headers:
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
+- name: 🇺🇸 VLESS-16
+  server: 154.26.184.247
+  port: 443
+  type: vless
+  uuid: 0c498440-b599-484f-b59b-81d6f781dd11
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: maze.toys
+  reality-opts:
+    public-key: eSIMr-32aezFgRUFEfqefs1GlejGrV02TLIowbnPTyA
+    short-id: ''
+  client-fingerprint: firefox
+- name: 🇨🇦 VLESS-17
+  server: 188.114.97.6
+  port: 443
+  type: vless
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  network: ws
+  servername: edgetunnel-4uw.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 TROJAN-04
+  server: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
+  port: 443
+  type: trojan
+  password: LcICDcp!jD9TFV$NbH
+  udp: true
+  sni: dl2uF-iVdeZILZ3E86rK18.Hhvt37tjm2XBOsQL5HXogN-Y.woRKERS.dEv
+  network: ws
+  ws-opts:
+    path: /tr/pg4wM48V9O859nmqsJg22EOFKN4S570y
+    headers:
+      Host: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
+- name: 🇨🇦 VLESS-18
+  server: 188.114.97.6
+  port: 443
+  type: vless
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  network: ws
+  servername: edgetunnel-4uw.pages.dev
+  ws-opts:
+    path: /?
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇺🇸 SS-06
+  server: 108.181.0.177
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
+  udp: true
+- name: 🇺🇸 VMESS-03
   server: 216.152.152.187
   port: 22324
   type: vmess
@@ -738,6 +381,431 @@ proxies:
   tls: false
   network: tcp
   servername: 216.152.152.187
+- name: 🇨🇦 TROJAN-05
+  server: 104.21.8.63
+  port: 443
+  type: trojan
+  password: 5855d6850594830f
+  udp: true
+  sni: AkbARIan34.j9Z65Ce2uyks.WoRKeRS.DEV
+  network: ws
+  ws-opts:
+    path: /tr/w2O3K3xXNYDKIxwOIw7?ed=2560
+    headers:
+      Host: akbarian34.j9z65ce2uyks.workers.dev
+- name: 🇺🇸 VMESS-04
+  server: 167.17.68.89
+  port: 22324
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: tcp
+  servername: 167.17.68.89
+- name: 🇺🇸 TROJAN-06
+  server: 199.232.78.160
+  port: 443
+  type: trojan
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/D-e1i@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
+    headers:
+      Host: mitivpn---us--s---mitivpn-11.global.ssl.fastly.net
+- name: 🇺🇸 VMESS-05
+  server: 142.171.48.179
+  port: 28167
+  type: vmess
+  uuid: a75d95d5-ae5b-4207-a6a3-ada2943776b9
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: gw.alicdn.com
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇨🇦 VLESS-19
+  server: 172.64.229.170
+  port: 80
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  network: ws
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 HYSTERIA2-03
+  server: hy2.561891.xyz
+  port: 44356
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: hy2.561891.xyz
+  skip-cert-verify: true
+- name: 🇺🇸 SS-07
+  server: 129.146.56.197
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 7V16oHuTUxMQAfyrAro/m7NXdWktRoYZvIcoV7E0eHE=
+  udp: true
+- name: 🇺🇸 SS-08
+  server: 129.146.60.110
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: rn3fzP+5S/uNM95/6uQr3rQEowZWgWUG3e2f853i1Ww=
+  udp: true
+- name: 🇺🇸 TROJAN-07
+  server: 199.232.78.188
+  port: 443
+  type: trojan
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?Telegram---V2ray_confiig
+    headers:
+      Host: mitivpn---gb--s---mitivpn-1.global.ssl.fastly.net
+- name: 🇺🇸 SS-09
+  server: 129.146.38.47
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9Biq/bLYu1Dmcuj4yhbtgnOVwa2pzAUAK0kPEL2FOJY=
+  udp: true
+- name: 🇺🇸 TROJAN-08
+  server: 199.232.78.101
+  port: 443
+  type: trojan
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: '@mehrosaboran'
+    headers:
+      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
+- name: 🇺🇸 SS-10
+  server: 129.146.164.199
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: oPlv4+8UGEF0KZ5f4kDFxpvV5SsW+3veVs23YwxFmBk=
+  udp: true
+- name: 🇺🇸 VMESS-06
+  server: 129.146.143.80
+  port: 48111
+  type: vmess
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: tcp
+  servername: 129.146.143.80
+- name: 🇨🇦 VLESS-20
+  server: 188.114.97.6
+  port: 443
+  type: vless
+  uuid: 1c9daf90-3950-44ac-b06f-4cf9aec63170
+  udp: true
+  tls: true
+  network: ws
+  servername: FrEe.SeRVEr14peekCoNfIG.WoRKErS.dEV
+  ws-opts:
+    path: /eyJqdW5rIjoiQmFCblN3SmhXYTB3RzVoIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+    headers:
+      Host: free.server14peekconfig.workers.dev
+- name: 🇺🇸 HYSTERIA2-04
+  server: 142.249.37.90
+  port: 44356
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: hy2.561891.xyz
+  skip-cert-verify: true
+- name: 🇺🇸 SS-11
+  server: 173.244.56.6
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 VMESS-07
+  server: 167.88.62.124
+  port: 22324
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: tcp
+  servername: 167.88.62.124
+- name: 🇺🇸 VLESS-21
+  server: 107.149.159.190
+  port: 4433
+  type: vless
+  uuid: 443d55c9-9b78-4ad4-ac34-5ada5b98e97e
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.postgresql.org
+  reality-opts:
+    public-key: ptrxM_lwiuXte-ynRSfM7AyayGbWrfCzkV1gQ5EgeSw
+    short-id: 0fa5bc397af019a2
+  client-fingerprint: chrome
+- name: 🏳️ VLESS-22
+  server: 172.67.174.249
+  port: 443
+  type: vless
+  uuid: 26b35808-f1e1-4b97-8c69-46796f058d8b
+  udp: true
+  tls: true
+  network: ws
+  servername: ezaccess-project-9138d4.5f6on.workers.dev
+  ws-opts:
+    path: /eyJqdW5rIjoicG9pMkt4TDY2TVNtRSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ezaccess-project-9138d4.5f6on.workers.dev
+- name: 🏳️ SS-12
+  server: 103.214.111.162
+  port: 16469
+  type: ss
+  cipher: aes-128-gcm
+  password: 87e9cb62706b5cd08da95b8b423cb673
+  udp: true
+- name: 🏳️ VLESS-23
+  server: 162.159.140.78
+  port: 8880
+  type: vless
+  uuid: f35fb51f-8d34-49ec-80cb-7d04ffc1a69b
+  udp: true
+  tls: false
+  network: ws
+  servername: damp-sky-9aaa.224-8b4.workers.dev
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: damp-sky-9aaa.224-8b4.workers.dev
+- name: 🏳️ VLESS-24
+  server: 104.17.147.22
+  port: 443
+  type: vless
+  uuid: 518de0d4-6ce8-4404-80db-23c4a8806128
+  udp: true
+  tls: true
+  network: ws
+  servername: ez-5FAAFb.EsmAoi.wORKeRs.DEv
+  ws-opts:
+    path: /eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ez-5faafb.esmaoi.workers.dev
+- name: 🏳️ VLESS-25
+  server: 162.159.43.187
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  network: ws
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🏳️ VLESS-26
+  server: restless-base-fe24.alirezahabibi20009.workers.dev
+  port: 443
+  type: vless
+  uuid: 4908acbe-485f-4e1c-bb11-5dd04b9f7e88
+  udp: true
+  tls: true
+  network: ws
+  servername: restless-base-fe24.alirezahabibi20009.workers.dev
+  ws-opts:
+    path: /eyJqdW5rIjoiRjhycEV5WUpJTGZpQSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: restless-base-fe24.alirezahabibi20009.workers.dev
+- name: 🏳️ VLESS-27
+  server: 172.64.153.235
+  port: 8443
+  type: vless
+  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
+  udp: true
+  tls: true
+  network: ws
+  servername: socks5.revil-time3.workers.dev
+  ws-opts:
+    path: /socks5://128.140.46.169:13482
+    headers:
+      Host: socks5.revil-time3.workers.dev
+- name: 🏳️ VLESS-28
+  server: 63.141.128.22
+  port: 443
+  type: vless
+  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
+  udp: true
+  tls: true
+  network: ws
+  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+  ws-opts:
+    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+- name: 🏳️ TROJAN-09
+  server: 104.16.104.34
+  port: 443
+  type: trojan
+  password: Telegram_healer_config
+  udp: true
+  sni: TH1R714O73d1P35f.mr2esNK29L620Xo76Kpuv-QUb4B7IDfR.WOrkeRS.DeV
+  network: ws
+  ws-opts:
+    path: /tr/gtMkuJkm42JnKfAr?ed=2560
+    headers:
+      Host: TH1R714O73d1P35f.mr2esNK29L620Xo76Kpuv-QUb4B7IDfR.WOrkeRS.DeV
+- name: 🏳️ VLESS-29
+  server: 104.21.0.115
+  port: 8880
+  type: vless
+  uuid: 8995976a-1c81-4b44-a414-d3bc71058a21
+  udp: true
+  tls: false
+  network: ws
+  servername: muddy-queen-cdda.181-cf9.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: muddy-queen-cdda.181-cf9.workers.dev
+- name: 🏳️ VLESS-30
+  server: 162.159.156.214
+  port: 8880
+  type: vless
+  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
+  udp: true
+  tls: false
+  network: ws
+  servername: soft-band-8da6.426.workers.dev
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: soft-band-8da6.426.workers.dev
+- name: 🏳️ VLESS-31
+  server: log.bpminecraft.com
+  port: 8880
+  type: vless
+  uuid: ed189537-41de-4abe-9f8b-bb75d457722d
+  udp: true
+  tls: false
+  network: ws
+  servername: lucky-cake-4f58.318-5ee.workers.dev
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lucky-cake-4f58.318-5ee.workers.dev
+- name: 🏳️ VLESS-32
+  server: 172.64.154.8
+  port: 2052
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  network: ws
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🏳️ VLESS-33
+  server: 172.64.154.8
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  network: ws
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🏳️ VLESS-34
+  server: 104.17.191.15
+  port: 8880
+  type: vless
+  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
+  udp: true
+  tls: false
+  network: ws
+  servername: fancy-haze-ab00.236-68b.workers.dev
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: fancy-haze-ab00.236-68b.workers.dev
+- name: 🏳️ VLESS-35
+  server: 172.67.162.93
+  port: 8880
+  type: vless
+  uuid: 94977b19-6720-48a6-92fd-00238757ea30
+  udp: true
+  tls: false
+  network: ws
+  servername: fragrant-credit-c4cf.148-e68.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: fragrant-credit-c4cf.148-e68.workers.dev
+- name: 🏳️ VLESS-36
+  server: 172.64.151.134
+  port: 8880
+  type: vless
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+  udp: true
+  tls: false
+  network: ws
+  servername: mute-sunset-0849.40-aeb.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: mute-sunset-0849.40-aeb.workers.dev
+- name: 🏳️ VLESS-37
+  server: 104.21.88.129
+  port: 8880
+  type: vless
+  uuid: caa0f615-2598-4b78-b339-2824658a602b
+  udp: true
+  tls: false
+  network: ws
+  servername: soft-dream-429a.319.workers.dev
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: soft-dream-429a.319.workers.dev
+- name: 🏳️ VLESS-38
+  server: 104.21.55.229
+  port: 8880
+  type: vless
+  uuid: f769b7ea-9cd1-4d61-b578-7644b7c8eb3d
+  udp: true
+  tls: false
+  network: ws
+  servername: quiet-waterfall-e914.180-ac4.workers.dev
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: quiet-waterfall-e914.180-ac4.workers.dev
 proxy-groups:
 - name: 🚀 PROXY
   type: select
@@ -750,82 +818,82 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸 SS-01
-  - 🇺🇸 SS-02
-  - 🇺🇸 SS-03
-  - 🇺🇸 VLESS-01
-  - 🇺🇸 SS-04
   - 🇺🇸 VMESS-01
-  - 🇺🇸 SS-05
-  - 🇺🇸 VMESS-02
-  - 🇺🇸 SS-06
-  - 🇺🇸 TROJAN-01
-  - 🇺🇸 VLESS-08
-  - 🇺🇸 SS-07
-  - 🇺🇸 SS-08
-  - 🇺🇸 VLESS-11
-  - 🇺🇸 SS-09
-  - 🇺🇸 SS-10
+  - 🇺🇸 VLESS-02
+  - 🇺🇸 SS-01
+  - 🇺🇸 VLESS-03
+  - 🇺🇸 SS-03
+  - 🇺🇸 VLESS-05
   - 🇺🇸 VLESS-13
-  - 🇺🇸 VMESS-03
-  - 🇺🇸 SS-11
-  - 🇺🇸 SS-12
-  - 🇺🇸 VLESS-15
-  - 🇺🇸 VLESS-16
-  - 🇺🇸 TROJAN-02
-  - 🇺🇸 VLESS-18
   - 🇺🇸 HYSTERIA2-01
   - 🇺🇸 HYSTERIA2-02
-  - 🇺🇸 VLESS-19
-  - 🇺🇸 SS-14
-  - 🇺🇸 VLESS-20
   - 🇺🇸 TROJAN-03
-  - 🇺🇸 VLESS-21
-  - 🇺🇸 TROJAN-04
-  - 🇺🇸 TROJAN-05
+  - 🇺🇸 VLESS-14
+  - 🇺🇸 SS-04
+  - 🇺🇸 SS-05
+  - 🇺🇸 VLESS-16
+  - 🇺🇸 SS-06
+  - 🇺🇸 VMESS-03
+  - 🇺🇸 VMESS-04
   - 🇺🇸 TROJAN-06
-  - 🇺🇸 SS-15
-  - 🇺🇸 SS-16
-  - 🇺🇸 HYSTERIA2-03
-  - 🇺🇸 SS-17
-  - 🇺🇸 VLESS-25
   - 🇺🇸 VMESS-05
-  - 🇺🇸 VMESS-06
-  - 🇺🇸 SS-18
-  - 🇺🇸 SS-19
-  - 🇺🇸 SS-20
-  - 🇺🇸 SS-21
-  - 🇺🇸 SS-22
-  - 🇺🇸 HYSTERIA2-04
-  - 🇺🇸 SS-23
+  - 🇺🇸 HYSTERIA2-03
+  - 🇺🇸 SS-07
+  - 🇺🇸 SS-08
   - 🇺🇸 TROJAN-07
-  - 🇺🇸 VLESS-27
-  - 🇺🇸 SS-24
-  - 🇺🇸 SS-25
+  - 🇺🇸 SS-09
+  - 🇺🇸 TROJAN-08
+  - 🇺🇸 SS-10
+  - 🇺🇸 VMESS-06
+  - 🇺🇸 HYSTERIA2-04
+  - 🇺🇸 SS-11
   - 🇺🇸 VMESS-07
+  - 🇺🇸 VLESS-21
 - name: 🌍 Others
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇨🇦 VLESS-02
-  - 🇨🇦 VLESS-03
+  - 🇨🇦 TROJAN-01
+  - 🇨🇦 VMESS-02
+  - 🇨🇦 VLESS-01
+  - 🇨🇦 SS-02
   - 🇨🇦 VLESS-04
-  - 🇨🇦 VLESS-05
   - 🇨🇦 VLESS-06
   - 🇨🇦 VLESS-07
+  - 🇨🇦 VLESS-08
   - 🇨🇦 VLESS-09
   - 🇨🇦 VLESS-10
+  - 🇨🇦 VLESS-11
+  - 🇨🇦 TROJAN-02
   - 🇨🇦 VLESS-12
-  - 🇨🇦 VLESS-14
-  - 🇨🇦 SS-13
+  - 🇨🇦 VLESS-15
   - 🇨🇦 VLESS-17
-  - 🇨🇦 VMESS-04
-  - 🇨🇦 VLESS-22
-  - 🇨🇦 VLESS-23
-  - 🇨🇦 VLESS-24
-  - 🇨🇦 VLESS-26
+  - 🇨🇦 TROJAN-04
+  - 🇨🇦 VLESS-18
+  - 🇨🇦 TROJAN-05
+  - 🇨🇦 VLESS-19
+  - 🇨🇦 VLESS-20
+  - 🏳️ VLESS-22
+  - 🏳️ SS-12
+  - 🏳️ VLESS-23
+  - 🏳️ VLESS-24
+  - 🏳️ VLESS-25
+  - 🏳️ VLESS-26
+  - 🏳️ VLESS-27
+  - 🏳️ VLESS-28
+  - 🏳️ TROJAN-09
+  - 🏳️ VLESS-29
+  - 🏳️ VLESS-30
+  - 🏳️ VLESS-31
+  - 🏳️ VLESS-32
+  - 🏳️ VLESS-33
+  - 🏳️ VLESS-34
+  - 🏳️ VLESS-35
+  - 🏳️ VLESS-36
+  - 🏳️ VLESS-37
+  - 🏳️ VLESS-38
 rules:
 - GEOSITE,category-ir,DIRECT
 - GEOIP,IR,DIRECT
