@@ -10,556 +10,791 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: 🇨🇱 TROJAN-01
-  server: 64.176.7.205
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+- name: 🇺🇸 VMESS-01
+  server: 129.146.77.248
+  port: 39495
+  type: vmess
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: advanceyouremploymentskillsandcareerdevelopmenthub.com
-- name: 🇧🇷 TROJAN-02
-  server: 216.238.104.154
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
+  tls: false
+  network: ws
+  servername: 129.146.77.248
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
 - name: 🇺🇸 SS-01
-  server: 162.251.62.31
+  server: 95.215.201.18
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇺🇸 SS-02
-  server: 193.151.160.18
+  server: 23.150.152.38
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇺🇸 VLESS-01
+  server: 143.246.62.191
+  port: 8443
+  type: vless
+  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  udp: true
+  tls: true
+  network: tcp
+  servername: github.githubassets.com
+  reality-opts:
+    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+    short-id: 4ad2e4e660550e43
+  client-fingerprint: chrome
+- name: 🇺🇸 VMESS-02
+  server: 23.147.56.181
+  port: 52843
+  type: vmess
+  uuid: 88be793c-c368-4eb1-8809-057e5df96606
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: tcp
+  servername: 23.147.56.181
 - name: 🇺🇸 SS-03
-  server: 38.91.107.188
-  port: 19999
+  server: 103.11.76.248
+  port: 28679
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: 2022-blake3-aes-128-gcm
+  password: NzJlOTQ5NWYtM2ZkYi00Cg==
   udp: true
-- name: 🇺🇸 TROJAN-03
-  server: 146.75.57.7
+- name: 🇺🇸 SS-04
+  server: 173.244.56.9
   port: 443
-  type: trojan
-  password: MiTiVPN
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  sni: cdn.akamai.steamstatic.com
+- name: 🇨🇦 VLESS-02
+  server: 789156.xyz
+  port: 443
+  type: vless
+  uuid: 5f11c240-89df-494c-9c81-8b619023bb58
+  udp: true
+  tls: true
+  network: ws
+  servername: 789156.xyz
+  ws-opts:
+    path: /?ed=2048fp=chrome
+    headers:
+      Host: 789156.xyz
+- name: 🇨🇦 TROJAN-01
+  server: 188.114.96.3
+  port: 2096
+  type: trojan
+  password: vP!XvZBNdw.e*ddSgmH!
+  udp: true
+  sni: n0q4XPrJ2D4X4PRCQ29L8JKCZd0.pAGES.dev
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN
+    path: /tr/ZFttmjSqvda5ohOQ?ed=2560
     headers:
-      Host: MiTiVPN-1-mitivpn.ac.ir
-- name: 🇺🇸 TROJAN-04
-  server: 169.197.140.169
+      Host: n0q4xprj2d4x4prcq29l8jkczd0.pages.dev
+- name: 🇨🇦 TROJAN-02
+  server: 104.25.95.49
   port: 443
   type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  password: 883e3cc8-9613-4f2d-8c42-0dd3d429db55
   udp: true
-  sni: api.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-- name: 🇺🇸 TROJAN-05
-  server: 169.197.140.214
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: courses.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-- name: 🇺🇸 TROJAN-06
-  server: 169.197.140.171
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-- name: 🇺🇸 TROJAN-07
-  server: 169.197.140.224
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: resources.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-- name: 🇺🇸 SS-04
-  server: 193.151.160.9
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 TROJAN-08
-  server: 169.197.140.218
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-- name: 🇺🇸 TROJAN-09
-  server: 169.197.140.245
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: www.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-- name: 🇺🇸 VLESS-01
-  server: 47.253.226.114
+  sni: ltf8.jueson.de5.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ltf8.jueson.de5.net
+- name: 🇨🇦 VLESS-03
+  server: 188.114.96.3
   port: 443
   type: vless
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  uuid: 5b716e51-489e-4e97-b5c8-dd10803eff93
   udp: true
   tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-    short-id: ''
-  client-fingerprint: chrome
-- name: 🇺🇸 SS-05
-  server: 38.121.43.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-06
-  server: 38.121.43.231
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-07
-  server: 38.22.17.219
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-08
-  server: 38.121.43.225
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-09
-  server: 38.22.17.139
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-10
-  server: 167.88.62.203
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 TROJAN-10
-  server: 216.152.156.81
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: www.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-- name: 🇺🇸 SS-11
-  server: 167.88.63.39
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-12
-  server: 38.22.17.214
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-13
-  server: 185.215.132.9
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-14
-  server: 38.22.17.129
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-15
-  server: 38.91.107.19
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-16
-  server: 167.88.63.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-17
-  server: 38.91.100.39
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-18
-  server: 37.19.198.244
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 SS-19
-  server: 37.19.198.160
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 SS-20
-  server: 37.19.198.236
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 VLESS-02
-  server: 195.123.235.183
+  network: ws
+  servername: snc9ne2f7zclhn5uzth7hcfgsrnympmmrnej7w2uzdjtsyt2fssssssssssssss.n0xp4ed8mc.workers.Dev
+  ws-opts:
+    path: 'Telegram channel : @pandavpntc'
+    headers:
+      Host: snc9ne2f7zclhn5uzth7hcfgsrnympmmrnej7w2uzdjtsyt2fssssssssssssss.n0xp4ed8mc.workers.Dev
+- name: 🇨🇦 VLESS-04
+  server: 104.26.1.117
   port: 443
   type: vless
-  uuid: c14ec728-3eca-4750-87fc-fd1e6aeb81d5
+  uuid: bdde0eb9-62c6-4d30-ac96-ab10d8eb7939
   udp: true
   tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: gateway.icloud.com
-  reality-opts:
-    public-key: H3R3BUAl7thrIZsznTbb-eRREIjQOH2f3WO0oTN7OGY
-    short-id: a0e2a6074c6456b0
-  client-fingerprint: chrome
-- name: 🇺🇸 SS-21
-  server: 167.88.62.56
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 VLESS-03
-  server: 185.95.231.156
+  network: ws
+  servername: erupencompanypdr.pages.dev
+  ws-opts:
+    path: /ISoOMY675XVPxHG4?ed=2560
+    headers:
+      Host: erupencompanypdr.pages.dev
+- name: 🇨🇦 VLESS-05
+  server: 188.114.97.3
   port: 443
   type: vless
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  uuid: 27135ee3-0829-4dbc-ae3e-b70e86e5d510
   udp: true
   tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: www.apple.com
-  reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  client-fingerprint: chrome
-- name: 🇺🇸 SS-22
-  server: 172.111.36.123
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-23
-  server: 37.19.198.243
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 VLESS-04
-  server: 45.91.248.239
-  port: 443
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  udp: true
-  tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: us2.japancase.site
-  reality-opts:
-    public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
-    short-id: 41ae8e266bc3346f
-  client-fingerprint: chrome
-- name: 🇺🇸 SS-24
-  server: 167.17.67.171
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 TROJAN-11
-  server: 69.164.240.85
-  port: 50875
-  type: trojan
-  password: nwilryafgkyvuxauc8pz
-  udp: true
-  sni: 69.164.240.85
-- name: 🇺🇸 VLESS-05
-  server: 195.211.98.43
-  port: 443
-  type: vless
-  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
-  udp: true
-  tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
-    short-id: 9c56fddf237e8eaf
-  client-fingerprint: chrome
-- name: 🇺🇸 SS-25
-  server: 66.163.125.120
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-26
-  server: 193.151.163.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-27
-  server: 149.40.57.135
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-28
-  server: 149.40.57.134
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
+  network: ws
+  servername: 63yw55ibrgt8rswbfnmhapuzux4p29favnxxslbjbnmqjzz7efh95h3nfdsfdsf.d2ha6.workers.Dev
+  ws-opts:
+    path: Telegram+channel+:+@pandavpntc
+    headers:
+      Host: 63yw55ibrgt8rswbfnmhapuzux4p29favnxxslbjbnmqjzz7efh95h3nfdsfdsf.d2ha6.workers.Dev
 - name: 🇨🇦 VLESS-06
-  server: 66.70.179.198
-  port: 2053
-  type: vless
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  network: tcp
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  client-fingerprint: random
-- name: 🇺🇸 SS-29
-  server: 172.111.38.72
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-30
-  server: 216.106.178.169
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-31
-  server: 15.204.246.132
-  port: 7307
-  type: ss
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: 🇺🇸 VLESS-07
-  server: 5.34.178.120
+  server: 104.21.14.232
   port: 443
   type: vless
-  uuid: 23b848b7-93e5-4d96-b36d-ed704912e5b7
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   udp: true
   tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: 4RaNuv9yehmcfpdzvRxCWWzEWERWzZSIHqcgg3l35Cw
-    short-id: e16bbf1a5bee2321
-  client-fingerprint: chrome
-- name: 🇺🇸 SS-32
-  server: 156.146.38.167
+  network: ws
+  servername: nuclear.us.kg
+  ws-opts:
+    path: /free/1.226.227.169:50001
+    headers:
+      Host: nuclear.us.kg
+- name: 🇨🇦 VLESS-07
+  server: 172.67.155.222
   port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: vless
+  uuid: 82b279c6-5cba-3a96-f8bd-780a00000035
   udp: true
-- name: 🇺🇸 SS-33
-  server: 45.86.51.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-34
-  server: 156.146.38.170
+  tls: true
+  network: ws
+  servername: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+  ws-opts:
+    path: /sync
+    headers:
+      Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+- name: 🇨🇦 TROJAN-03
+  server: russia.com
   port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: trojan
+  password: bpb-trojan
   udp: true
-- name: 🇺🇸 SS-35
-  server: 185.230.230.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-36
-  server: 149.40.57.133
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-37
-  server: 149.40.57.138
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-38
-  server: 156.146.38.168
+  sni: kargar001.pages.dev
+  network: ws
+  ws-opts:
+    path: /tr?ed=2560
+    headers:
+      Host: kargar001.pages.dev
+- name: 🇨🇦 VLESS-08
+  server: 104.19.13.194
   port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: vless
+  uuid: 8eb92a78-ec8d-4ff6-8a2d-8b801367be87
   udp: true
-- name: 🇺🇸 SS-39
-  server: 38.128.66.32
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  tls: true
+  network: ws
+  servername: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+- name: 🇨🇦 TROJAN-04
+  server: 104.17.10.171
+  port: 443
+  type: trojan
+  password: 883e3cc8-9613-4f2d-8c42-0dd3d429db55
   udp: true
-- name: 🇺🇸 TROJAN-12
+  sni: ltf8.jueson.de5.net
+  network: ws
+  ws-opts:
+    path: /categories/community/
+    headers:
+      Host: ltf8.jueson.de5.net
+- name: 🇨🇦 VLESS-09
+  server: www.buydomains.com
+  port: 443
+  type: vless
+  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
+  udp: true
+  tls: true
+  network: ws
+  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+  ws-opts:
+    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
+    headers:
+      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+- name: 🇨🇦 VLESS-10
+  server: 188.114.96.3
+  port: 443
+  type: vless
+  uuid: 5b716e51-489e-4e97-b5c8-dd10803eff93
+  udp: true
+  tls: true
+  network: ws
+  servername: snc9ne2f7zclhn5uzth7hcfgsrnympmmrnej7w2uzdjtsyt2fssssssssssssss.n0xp4ed8mc.workers.Dev
+  ws-opts:
+    path: 'Telegram channel : @VPNine1'
+    headers:
+      Host: snc9ne2f7zclhn5uzth7hcfgsrnympmmrnej7w2uzdjtsyt2fssssssssssssss.n0xp4ed8mc.workers.Dev
+- name: 🇨🇦 TROJAN-05
+  server: www.wto.org
+  port: 8443
+  type: trojan
+  password: ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f
+  udp: true
+  sni: jiangjc.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: jiangjc.pages.dev
+- name: 🇺🇸 VLESS-11
+  server: 8.6.112.0
+  port: 8443
+  type: vless
+  uuid: 8eb92a78-ec8d-4ff6-8a2d-8b801367be87
+  udp: true
+  tls: true
+  network: ws
+  servername: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+- name: 🇺🇸 SS-05
+  server: 38.145.220.193
+  port: 8443
+  type: ss
+  cipher: 2022-blake3-aes-128-gcm
+  password: jUbDNsFamcyDfpm+rI3Zyw==
+  udp: true
+- name: 🇨🇦 VLESS-12
+  server: 104.25.5.52
+  port: 443
+  type: vless
+  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
+  udp: true
+  tls: true
+  network: ws
+  servername: fornewiran.ade-1000.workers.dev
+  ws-opts:
+    path: /vl/yLWNcuUuw1jlJpkDhGy?ed
+    headers:
+      Host: fornewiran.ade-1000.workers.dev
+- name: 🇨🇦 VLESS-13
+  server: wangcai.cf.877774.xyz
+  port: 443
+  type: vless
+  uuid: 16e80f38-e97e-4b14-ba89-77d87a3e637f
+  udp: true
+  tls: true
+  network: ws
+  servername: ex3r.qzz.io
+  ws-opts:
+    path: /sg-orcl
+    headers:
+      Host: ex3r.qzz.io
+- name: 🇨🇦 VLESS-14
+  server: 188.114.97.9
+  port: 443
+  type: vless
+  uuid: 27135ee3-0829-4dbc-ae3e-b70e86e5d510
+  udp: true
+  tls: true
+  network: ws
+  servername: 63yw55ibrgt8rswbfnmhapuzux4p29favnxxslbjbnmqjzz7efh95h3nfdsfdsf.d2ha6.workers.Dev
+  ws-opts:
+    path: 'Telegram channel : @pandavpntc'
+    headers:
+      Host: 63yw55ibrgt8rswbfnmhapuzux4p29favnxxslbjbnmqjzz7efh95h3nfdsfdsf.d2ha6.workers.Dev
+- name: 🇨🇦 VLESS-15
+  server: cfnode-11ivy8.pages.dev
+  port: 443
+  type: vless
+  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
+  udp: true
+  tls: true
+  network: ws
+  servername: cfnode-11ivy8.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: cfnode-11ivy8.pages.dev
+- name: 🇨🇦 VLESS-16
+  server: 104.19.13.194
+  port: 443
+  type: vless
+  uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
+  udp: true
+  tls: true
+  network: ws
+  servername: top-e4s.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: top-e4s.pages.dev
+- name: 🇺🇸 TROJAN-06
+  server: 66.163.112.76
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: api.unlockyourfuturefindyourperfectcareer.com
+- name: 🇨🇦 VLESS-17
+  server: cfnode-11ivy8.pages.dev
+  port: 443
+  type: vless
+  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
+  udp: true
+  tls: true
+  network: ws
+  servername: cfnode-11ivy8.pages.dev
+  ws-opts:
+    path: /ws
+    headers:
+      Host: cfnode-11ivy8.pages.dev
+- name: 🇨🇦 VLESS-18
+  server: support.zoom.us.vltj.qzz.io
+  port: 443
+  type: vless
+  uuid: 506e4a91-1d05-5683-b84c-2113f673cb19
+  udp: true
+  tls: true
+  network: ws
+  servername: support.zoom.us.vltj.qzz.io
+  ws-opts:
+    path: /id-pusat
+    headers:
+      Host: support.zoom.us.vltj.qzz.io
+- name: 🇨🇦 VLESS-19
+  server: 789156.xyz
+  port: 443
+  type: vless
+  uuid: 5f11c240-89df-494c-9c81-8b619023bb58
+  udp: true
+  tls: true
+  network: ws
+  servername: 789156.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: 789156.xyz
+- name: 🇨🇦 VLESS-20
+  server: 172.67.73.213
+  port: 443
+  type: vless
+  uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
+  udp: true
+  tls: true
+  network: ws
+  servername: aio.eth0.dpdns.org
+  ws-opts:
+    path: /aioproxybot/94.23.144.99-2053
+    headers:
+      Host: aio.eth0.dpdns.org
+- name: 🇺🇸 TROJAN-07
+  server: 66.163.112.121
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: www.unlockyourfuturefindyourperfectcareer.com
+- name: 🇺🇸 TROJAN-08
   server: 66.163.112.13
   port: 443
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
   sni: blog.unlockyourfuturefindyourperfectcareer.com
-- name: 🇺🇸 SS-40
-  server: 67.220.73.178
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 TROJAN-13
+- name: 🇺🇸 TROJAN-09
   server: 66.163.112.171
   port: 443
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
   sni: learn.unlockyourfuturefindyourperfectcareer.com
-- name: 🇺🇸 TROJAN-14
-  server: 66.163.112.142
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: cdn.unlockyourfuturefindyourperfectcareer.com
-- name: 🇺🇸 SS-41
-  server: 156.146.38.169
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 TROJAN-15
-  server: 66.163.112.121
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: www.unlockyourfuturefindyourperfectcareer.com
-- name: 🇺🇸 VLESS-08
-  server: 167.17.69.171
+- name: 🇨🇦 VLESS-21
+  server: 188.114.97.3
   port: 443
   type: vless
-  uuid: 00144519-7e0d-476b-8d28-435576af9262
+  uuid: 27135ee3-0829-4dbc-ae3e-b70e86e5d510
   udp: true
   tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
-    short-id: 0990d22f
-  client-fingerprint: chrome
-- name: 🇺🇸 TROJAN-16
+  network: ws
+  servername: 63yw55ibrgt8rswbfnmhapuzux4p29favnxxslbjbnmqjzz7efh95h3nfdsfdsf.d2ha6.workers.Dev
+  ws-opts:
+    path: 'Telegram channel : @VPNine1'
+    headers:
+      Host: 63yw55ibrgt8rswbfnmhapuzux4p29favnxxslbjbnmqjzz7efh95h3nfdsfdsf.d2ha6.workers.Dev
+- name: 🇨🇦 VLESS-22
+  server: 104.18.0.1
+  port: 443
+  type: vless
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+  udp: true
+  tls: true
+  network: ws
+  servername: all.speedtest03.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: all.speedtest03.ccwu.cc
+- name: 🇨🇦 VLESS-23
+  server: 172.67.79.160
+  port: 2087
+  type: vless
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  udp: true
+  tls: true
+  network: ws
+  servername: cvhpyn.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: cvhpyn.pages.dev
+- name: 🇨🇦 VLESS-24
+  server: 188.114.97.3
+  port: 443
+  type: vless
+  uuid: e7727c1e-c5a7-4810-b31a-2eeb22f95d6d
+  udp: true
+  tls: true
+  network: ws
+  servername: kjjwrmfezmelh9amswcvmuscxxuuqdzzgw9khj7cfgcp59yju9edrihsssssss6.oh7mn.workers.Dev
+  ws-opts:
+    path: 'telegram channel : @pandavpntc'
+    headers:
+      Host: kjjwrmfezmelh9amswcvmuscxxuuqdzzgw9khj7cfgcp59yju9edrihsssssss6.oh7mn.workers.Dev
+- name: 🇨🇦 VLESS-25
+  server: 172.67.184.45
+  port: 443
+  type: vless
+  uuid: 82b279c6-5cba-3a96-f8bd-780a00000045
+  udp: true
+  tls: true
+  network: ws
+  servername: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+- name: 🇺🇸 TROJAN-10
   server: 66.163.112.242
   port: 443
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
   sni: resources.unlockyourfuturefindyourperfectcareer.com
-- name: 🇺🇸 TROJAN-17
-  server: 66.163.112.147
+- name: 🇨🇦 VLESS-26
+  server: 104.18.40.171
+  port: 443
+  type: vless
+  uuid: 8895be79-9817-4011-b81a-14a35a3d328e
+  udp: true
+  tls: true
+  network: ws
+  servername: wallweb-boi.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-boi.pages.dev
+- name: 🇨🇦 VLESS-27
+  server: 172.67.174.10
+  port: 443
+  type: vless
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  udp: true
+  tls: true
+  network: ws
+  servername: blackshadow.dpdns.org
+  ws-opts:
+    path: /44.209.52.7-443
+    headers:
+      Host: blackshadow.dpdns.org
+- name: 🇺🇸 HYSTERIA2-01
+  server: hy2.123266.xyz
+  port: 33333
+  type: hysteria2
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: hy2.123266.xyz
+  skip-cert-verify: true
+- name: 🇨🇦 VLESS-28
+  server: ld.235231.xyz
+  port: 443
+  type: vless
+  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
+  udp: true
+  tls: true
+  network: ws
+  servername: ld.235231.xyz
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ld.235231.xyz
+- name: 🇺🇸 TROJAN-11
+  server: 66.163.112.31
   port: 443
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: courses.unlockyourfuturefindyourperfectcareer.com
-- name: 🇺🇸 TROJAN-18
-  server: 66.163.112.121
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: www.unlockyourfuturefindyourperfectcareer.com
-- name: 🇺🇸 TROJAN-19
-  server: 216.152.155.54
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: 216.152.155.54
-- name: 🇺🇸 TROJAN-20
-  server: 216.152.155.54
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: learn.nextjobopportunityandclaimyouridealrole.com
-- name: 🇺🇸 TROJAN-21
+  sni: unlockyourfuturefindyourperfectcareer.com
+- name: 🇺🇸 HYSTERIA2-02
+  server: 155.248.209.237
+  port: 33333
+  type: hysteria2
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: 155.248.209.237
+  skip-cert-verify: true
+- name: 🇺🇸 TROJAN-12
   server: 66.163.112.142
   port: 443
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
   sni: cdn.unlockyourfuturefindyourperfectcareer.com
+- name: 🇨🇦 VLESS-29
+  server: tn1r.eu.cc
+  port: 443
+  type: vless
+  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
+  udp: true
+  tls: true
+  network: ws
+  servername: tn1r.eu.cc
+  ws-opts:
+    path: /id-pusat
+    headers:
+      Host: tn1r.eu.cc
+- name: 🇨🇦 VLESS-30
+  server: 172.67.74.177
+  port: 2083
+  type: vless
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  udp: true
+  tls: true
+  network: ws
+  servername: edge.yzkvm.top
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
+- name: 🇨🇦 VLESS-31
+  server: 789156.xyz
+  port: 443
+  type: vless
+  uuid: 5f11c240-89df-494c-9c81-8b619023bb58
+  udp: true
+  tls: true
+  network: ws
+  servername: 789156.xyz
+  ws-opts:
+    path: /?ed=2048fp=randomized
+    headers:
+      Host: 789156.xyz
+- name: 🇨🇦 VLESS-32
+  server: 104.26.0.1
+  port: 443
+  type: vless
+  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
+  udp: true
+  tls: true
+  network: ws
+  servername: ezaccess-project-f62c30.pages.dev
+  ws-opts:
+    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ezaccess-project-f62c30.pages.dev
+- name: 🇨🇦 VLESS-33
+  server: 172.67.76.205
+  port: 2083
+  type: vless
+  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
+  udp: true
+  tls: true
+  network: ws
+  servername: kv.074167.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kv.074167.xyz
+- name: 🇨🇦 VLESS-34
+  server: 188.114.97.6
+  port: 443
+  type: vless
+  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
+  udp: true
+  tls: true
+  network: ws
+  servername: youxuanku.kdns.fr
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: youxuanku.kdns.fr
+- name: 🇨🇦 VLESS-35
+  server: 104.21.13.229
+  port: 443
+  type: vless
+  uuid: 5f11c240-89df-494c-9c81-8b619023bb58
+  udp: true
+  tls: true
+  network: ws
+  servername: 789156.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: 789156.xyz
+- name: 🇨🇦 VLESS-36
+  server: 172.67.131.125
+  port: 2083
+  type: vless
+  uuid: f418674e-f518-4318-8ff9-e10000000046
+  udp: true
+  tls: true
+  network: ws
+  servername: smart-edge-424.arti98399-1905.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: smart-edge-424.arti98399-1905.workers.dev
+- name: 🇨🇦 VLESS-37
+  server: 188.114.97.6
+  port: 443
+  type: vless
+  uuid: 87c467e9-f0af-4b03-8fbd-65fd375d3a26
+  udp: true
+  tls: true
+  network: ws
+  servername: pmpmppm.pages.dev
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: pmpmppm.pages.dev
+- name: 🇨🇦 VLESS-38
+  server: 104.18.1.1
+  port: 2083
+  type: vless
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  udp: true
+  tls: true
+  network: ws
+  servername: vlsovip.1d.mom
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlsovip.1d.mom
+- name: 🇺🇸 TROJAN-13
+  server: 66.163.112.147
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.unlockyourfuturefindyourperfectcareer.com
+- name: 🇨🇦 VLESS-39
+  server: 172.67.79.160
+  port: 2087
+  type: vless
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  udp: true
+  tls: true
+  network: ws
+  servername: cvhpyn.pages.dev
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: cvhpyn.pages.dev
+- name: 🇨🇦 VLESS-40
+  server: 172.67.74.177
+  port: 443
+  type: vless
+  uuid: e53eacb6-cd30-4964-a57c-febcb5151b98
+  udp: true
+  tls: true
+  network: ws
+  servername: wallweb-4r0.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4r0.pages.dev
+- name: 🇨🇦 VLESS-41
+  server: 104.18.40.171
+  port: 443
+  type: vless
+  uuid: 8895be79-9817-4011-b81a-14a35a3d328e
+  udp: true
+  tls: true
+  network: ws
+  servername: wallweb-boi.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-boi.pages.dev
+- name: 🇺🇸 SS-06
+  server: 156.146.38.169
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 SS-07
+  server: 156.146.38.167
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 TROJAN-14
+  server: 167.88.61.52
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.browseseniorrolesandenhanceyourcareertoday.com
+- name: 🇨🇦 VLESS-42
+  server: 104.21.71.249
+  port: 443
+  type: vless
+  uuid: 3de5a94c-aadc-4e40-ba1a-7d4b6545f8a3
+  udp: true
+  tls: true
+  network: ws
+  servername: oooyo.bi8bo.cyou
+  ws-opts:
+    path: /
+    headers:
+      Host: oooyo.bi8bo.cyou
+- name: 🇨🇦 VLESS-43
+  server: 104.18.1.1
+  port: 2083
+  type: vless
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  udp: true
+  tls: true
+  network: ws
+  servername: vlsovip.1d.mom
+  ws-opts:
+    path: /socks5=888:888
+    headers:
+      Host: vlsovip.1d.mom
+- name: 🇺🇸 SS-08
+  server: 156.146.38.168
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 SS-09
+  server: 169.197.142.68
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 proxy-groups:
 - name: 🚀 PROXY
   type: select
@@ -572,82 +807,82 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - 🇺🇸 VMESS-01
   - 🇺🇸 SS-01
   - 🇺🇸 SS-02
+  - 🇺🇸 VLESS-01
+  - 🇺🇸 VMESS-02
   - 🇺🇸 SS-03
-  - 🇺🇸 TROJAN-03
-  - 🇺🇸 TROJAN-04
-  - 🇺🇸 TROJAN-05
+  - 🇺🇸 SS-04
+  - 🇺🇸 VLESS-11
+  - 🇺🇸 SS-05
   - 🇺🇸 TROJAN-06
   - 🇺🇸 TROJAN-07
-  - 🇺🇸 SS-04
   - 🇺🇸 TROJAN-08
   - 🇺🇸 TROJAN-09
-  - 🇺🇸 VLESS-01
-  - 🇺🇸 SS-05
+  - 🇺🇸 TROJAN-10
+  - 🇺🇸 HYSTERIA2-01
+  - 🇺🇸 TROJAN-11
+  - 🇺🇸 HYSTERIA2-02
+  - 🇺🇸 TROJAN-12
+  - 🇺🇸 TROJAN-13
   - 🇺🇸 SS-06
   - 🇺🇸 SS-07
+  - 🇺🇸 TROJAN-14
   - 🇺🇸 SS-08
   - 🇺🇸 SS-09
-  - 🇺🇸 SS-10
-  - 🇺🇸 TROJAN-10
-  - 🇺🇸 SS-11
-  - 🇺🇸 SS-12
-  - 🇺🇸 SS-13
-  - 🇺🇸 SS-14
-  - 🇺🇸 SS-15
-  - 🇺🇸 SS-16
-  - 🇺🇸 SS-17
-  - 🇺🇸 SS-18
-  - 🇺🇸 SS-19
-  - 🇺🇸 SS-20
-  - 🇺🇸 VLESS-02
-  - 🇺🇸 SS-21
-  - 🇺🇸 VLESS-03
-  - 🇺🇸 SS-22
-  - 🇺🇸 SS-23
-  - 🇺🇸 VLESS-04
-  - 🇺🇸 SS-24
-  - 🇺🇸 TROJAN-11
-  - 🇺🇸 VLESS-05
-  - 🇺🇸 SS-25
-  - 🇺🇸 SS-26
-  - 🇺🇸 SS-27
-  - 🇺🇸 SS-28
-  - 🇺🇸 SS-29
-  - 🇺🇸 SS-30
-  - 🇺🇸 SS-31
-  - 🇺🇸 VLESS-07
-  - 🇺🇸 SS-32
-  - 🇺🇸 SS-33
-  - 🇺🇸 SS-34
-  - 🇺🇸 SS-35
-  - 🇺🇸 SS-36
-  - 🇺🇸 SS-37
-  - 🇺🇸 SS-38
-  - 🇺🇸 SS-39
-  - 🇺🇸 TROJAN-12
-  - 🇺🇸 SS-40
-  - 🇺🇸 TROJAN-13
-  - 🇺🇸 TROJAN-14
-  - 🇺🇸 SS-41
-  - 🇺🇸 TROJAN-15
-  - 🇺🇸 VLESS-08
-  - 🇺🇸 TROJAN-16
-  - 🇺🇸 TROJAN-17
-  - 🇺🇸 TROJAN-18
-  - 🇺🇸 TROJAN-19
-  - 🇺🇸 TROJAN-20
-  - 🇺🇸 TROJAN-21
 - name: 🌍 Others
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇨🇱 TROJAN-01
-  - 🇧🇷 TROJAN-02
+  - 🇨🇦 VLESS-02
+  - 🇨🇦 TROJAN-01
+  - 🇨🇦 TROJAN-02
+  - 🇨🇦 VLESS-03
+  - 🇨🇦 VLESS-04
+  - 🇨🇦 VLESS-05
   - 🇨🇦 VLESS-06
+  - 🇨🇦 VLESS-07
+  - 🇨🇦 TROJAN-03
+  - 🇨🇦 VLESS-08
+  - 🇨🇦 TROJAN-04
+  - 🇨🇦 VLESS-09
+  - 🇨🇦 VLESS-10
+  - 🇨🇦 TROJAN-05
+  - 🇨🇦 VLESS-12
+  - 🇨🇦 VLESS-13
+  - 🇨🇦 VLESS-14
+  - 🇨🇦 VLESS-15
+  - 🇨🇦 VLESS-16
+  - 🇨🇦 VLESS-17
+  - 🇨🇦 VLESS-18
+  - 🇨🇦 VLESS-19
+  - 🇨🇦 VLESS-20
+  - 🇨🇦 VLESS-21
+  - 🇨🇦 VLESS-22
+  - 🇨🇦 VLESS-23
+  - 🇨🇦 VLESS-24
+  - 🇨🇦 VLESS-25
+  - 🇨🇦 VLESS-26
+  - 🇨🇦 VLESS-27
+  - 🇨🇦 VLESS-28
+  - 🇨🇦 VLESS-29
+  - 🇨🇦 VLESS-30
+  - 🇨🇦 VLESS-31
+  - 🇨🇦 VLESS-32
+  - 🇨🇦 VLESS-33
+  - 🇨🇦 VLESS-34
+  - 🇨🇦 VLESS-35
+  - 🇨🇦 VLESS-36
+  - 🇨🇦 VLESS-37
+  - 🇨🇦 VLESS-38
+  - 🇨🇦 VLESS-39
+  - 🇨🇦 VLESS-40
+  - 🇨🇦 VLESS-41
+  - 🇨🇦 VLESS-42
+  - 🇨🇦 VLESS-43
 rules:
 - GEOSITE,category-ir,DIRECT
 - GEOIP,IR,DIRECT
