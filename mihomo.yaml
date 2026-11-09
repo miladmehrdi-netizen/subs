@@ -11,33 +11,12 @@ dns:
   - https://8.8.8.8/dns-query
 proxies:
 - name: 🇺🇸 SS-01
-  server: 216.106.178.169
+  server: 167.88.62.203
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 TROJAN-01
-  server: 216.152.155.176
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: blog.nextjobopportunityandclaimyouridealrole.com
-- name: 🇺🇸 TROJAN-02
-  server: 216.152.155.131
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: ekb.eg
-- name: 🇺🇸 TROJAN-03
-  server: 108.61.119.63
-  port: 42314
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  udp: true
-  sni: us007.zestapp778.com
 - name: 🇺🇸 SS-02
   server: 156.146.38.169
   port: 443
@@ -52,6 +31,27 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
+- name: 🇺🇸 TROJAN-01
+  server: 216.152.155.158
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: resources.nextjobopportunityandclaimyouridealrole.com
+- name: 🇺🇸 SS-04
+  server: 156.146.38.167
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 SS-05
+  server: 156.146.38.170
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 - name: 🇺🇸 VLESS-01
   server: 108.61.119.63
   port: 18580
@@ -61,62 +61,27 @@ proxies:
   tls: true
   network: tcp
   servername: us007.zestapp778.com
-- name: 🇺🇸 SS-04
-  server: 156.146.38.170
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 TROJAN-04
-  server: 216.152.155.158
-  port: 443
+- name: 🇺🇸 TROJAN-02
+  server: 108.61.119.63
+  port: 42314
   type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  password: 5t6i121em5lkmsmk
   udp: true
-  sni: resources.nextjobopportunityandclaimyouridealrole.com
-- name: 🇺🇸 SS-05
+  sni: us007.zestapp778.com
+- name: 🇺🇸 SS-06
   server: 167.88.62.56
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 SS-06
-  server: 167.88.62.203
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-07
-  server: 67.220.73.178
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 TROJAN-05
-  server: 216.152.155.59
+- name: 🇺🇸 TROJAN-03
+  server: 216.152.155.131
   port: 443
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: api.nextjobopportunityandclaimyouridealrole.com
-- name: 🇺🇸 TROJAN-06
-  server: 216.152.155.23
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: courses.nextjobopportunityandclaimyouridealrole.com
-- name: 🇺🇸 TROJAN-07
-  server: 216.152.155.54
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: learn.nextjobopportunityandclaimyouridealrole.com
+  sni: ekb.eg
 - name: 🇺🇸 VLESS-02
   server: 47.253.226.114
   port: 443
@@ -131,15 +96,99 @@ proxies:
     public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
     short-id: ''
   client-fingerprint: chrome
+- name: 🇨🇦 TROJAN-04
+  server: 216.152.147.152
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: learn.connectingpeoplewithgreatjobs.com
+- name: 🇺🇸 SS-07
+  server: 38.121.43.225
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇦 TROJAN-05
+  server: 216.152.147.74
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: api.connectingpeoplewithgreatjobs.com
 - name: 🇺🇸 SS-08
-  server: 38.121.43.231
+  server: 185.215.132.9
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 SS-09
+  server: 37.19.198.236
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 TROJAN-06
+  server: 216.152.155.23
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.nextjobopportunityandclaimyouridealrole.com
+- name: 🇺🇸 SS-10
+  server: 38.22.17.139
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 TROJAN-07
+  server: 216.152.155.131
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: www.nextjobopportunityandclaimyouridealrole.com
+- name: 🇺🇸 SS-11
+  server: 38.121.43.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 SS-12
+  server: 37.19.198.160
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸 SS-13
+  server: 67.220.73.178
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 SS-14
+  server: 167.17.67.171
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 SS-15
+  server: 38.22.17.219
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇺🇸 VMESS-01
-  server: 167.88.63.99
+  server: 38.22.17.64
   port: 1270
   type: vmess
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
@@ -149,75 +198,6 @@ proxies:
   tls: true
   network: tcp
   servername: xmfhlpy.com
-- name: 🇺🇸 SS-09
-  server: 38.22.17.219
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-10
-  server: 37.19.198.244
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 SS-11
-  server: 38.128.66.32
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 VLESS-03
-  server: 199.232.78.159
-  port: 443
-  type: vless
-  uuid: 8fdeb819-df0c-456d-9a1d-e3a9950ece4d
-  udp: true
-  tls: true
-  network: ws
-  servername: cdn.akamai.steamstatic.com
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_s.global.ssl.fastly.net
-- name: 🇨🇦 TROJAN-08
-  server: 216.152.147.89
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: 216.152.147.89
-- name: 🇺🇸 SS-12
-  server: 167.17.67.171
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-13
-  server: 167.88.63.39
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-14
-  server: 38.22.17.129
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 SS-15
-  server: 37.19.198.243
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: 🇺🇸 SS-16
   server: 38.22.17.214
   port: 19999
@@ -226,66 +206,62 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇺🇸 SS-17
-  server: 172.111.36.123
+  server: 167.88.63.39
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇺🇸 SS-18
-  server: 38.121.43.18
+  server: 38.22.17.129
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇺🇸 VLESS-03
+  server: 185.95.231.156
+  port: 443
+  type: vless
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  udp: true
+  tls: true
+  network: tcp
+  flow: xtls-rprx-vision
+  servername: www.apple.com
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  client-fingerprint: chrome
 - name: 🇺🇸 SS-19
-  server: 38.22.17.139
+  server: 172.111.36.123
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇺🇸 SS-20
-  server: 37.19.198.236
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇺🇸 SS-21
-  server: 38.121.43.225
+  server: 167.88.63.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 TROJAN-09
-  server: 146.75.57.7
-  port: 443
-  type: trojan
-  password: MiTiVPN
-  udp: true
-  sni: cdn.akamai.steamstatic.com
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: MiTiVPN-1-mitivpn.ac.ir
-- name: 🇨🇦 TROJAN-10
-  server: russia.com
-  port: 443
-  type: trojan
-  password: bpb-trojan
-  udp: true
-  sni: kargar001.pages.dev
-  network: ws
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: kargar001.pages.dev
 - name: 🇺🇸 VLESS-04
-  server: 169.40.42.74
+  server: 45.138.100.248
+  port: 14430
+  type: vless
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  tls: false
+  network: ws
+  servername: 45.138.100.248
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.138.100.248
+- name: 🇺🇸 VLESS-05
+  server: 169.40.42.35
   port: 443
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
@@ -297,115 +273,29 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-  client-fingerprint: firefox
-- name: 🇺🇸 SS-22
-  server: 167.88.63.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  client-fingerprint: chrome
+- name: 🇨🇦 TROJAN-08
+  server: 149.248.50.252
+  port: 46977
+  type: trojan
+  password: 5t6i121em5lkmsmk
   udp: true
-- name: 🇺🇸 SS-23
-  server: 185.215.132.9
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇨🇦 VLESS-05
-  server: 188.114.97.3
+  sni: ca001.zestapp778.com
+- name: 🇺🇸 TROJAN-09
+  server: 216.152.155.176
   port: 443
-  type: vless
-  uuid: 72f10005-8849-4072-b081-db3258c1350f
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: true
-  network: ws
-  servername: xa6jgykbpcfy6na3tt4zeefsquy2x5kank9hmzdqieofbqkbv3kukzmdfsssaaa.b5mq1ob64b.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: xa6jgykbpcfy6na3tt4zeefsquy2x5kank9hmzdqieofbqkbv3kukzmdfsssaaa.b5mq1ob64b.workers.dev
-- name: 🇺🇸 SS-24
-  server: 37.19.198.160
+  sni: blog.nextjobopportunityandclaimyouridealrole.com
+- name: 🇺🇸 SS-21
+  server: 37.19.198.244
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸 TROJAN-11
-  server: 66.163.114.132
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com
-- name: 🇺🇸 TROJAN-12
-  server: 66.163.114.126
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: resources.findconnectwithemployersandbuildprofessionalnetwork.com
-- name: 🇨🇦 TROJAN-13
-  server: 104.25.95.49
-  port: 443
-  type: trojan
-  password: 883e3cc8-9613-4f2d-8c42-0dd3d429db55
-  udp: true
-  sni: ltf8.jueson.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ltf8.jueson.de5.net
-- name: 🇨🇦 VLESS-06
-  server: 104.19.13.194
-  port: 443
-  type: vless
-  uuid: d44da6cd-10d2-4189-a167-49e9f35c7143
-  udp: true
-  tls: true
-  network: ws
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇺🇸 VLESS-07
-  server: 195.123.235.183
-  port: 443
-  type: vless
-  uuid: c14ec728-3eca-4750-87fc-fd1e6aeb81d5
-  udp: true
-  tls: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: gateway.icloud.com
-  reality-opts:
-    public-key: H3R3BUAl7thrIZsznTbb-eRREIjQOH2f3WO0oTN7OGY
-    short-id: a0e2a6074c6456b0
-  client-fingerprint: chrome
-- name: 🇺🇸 TROJAN-14
-  server: 66.163.114.45
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: cdn.findconnectwithemployersandbuildprofessionalnetwork.com
-- name: 🇨🇦 VLESS-08
-  server: 172.67.204.145
-  port: 2053
-  type: vless
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  network: ws
-  servername: proxy-1cu.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-1cu.pages.dev
-- name: 🇺🇸 VLESS-09
+- name: 🇺🇸 VLESS-06
   server: 159.89.87.21
   port: 28190
   type: vless
@@ -419,20 +309,46 @@ proxies:
     public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
     short-id: ''
   client-fingerprint: chrome
-- name: 🇺🇸 TROJAN-15
-  server: 66.163.114.114
+- name: 🇺🇸 SS-22
+  server: 38.145.220.193
+  port: 8443
+  type: ss
+  cipher: 2022-blake3-aes-128-gcm
+  password: jUbDNsFamcyDfpm+rI3Zyw==
+  udp: true
+- name: 🇺🇸 TROJAN-10
+  server: 216.152.155.59
   port: 443
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com
-- name: 🇺🇸 TROJAN-16
-  server: 66.163.114.132
+  sni: api.nextjobopportunityandclaimyouridealrole.com
+- name: 🇺🇸 SS-23
+  server: 193.151.163.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇦 TROJAN-11
+  server: 104.25.95.49
   port: 443
   type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  password: 883e3cc8-9613-4f2d-8c42-0dd3d429db55
   udp: true
-  sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com
+  sni: ltf8.jueson.de5.net
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: ltf8.jueson.de5.net
+- name: 🇺🇸 SS-24
+  server: 216.106.178.169
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇺🇸 SS-25
   server: 185.215.132.18
   port: 19999
@@ -440,41 +356,162 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 TROJAN-17
-  server: 66.163.114.245
+- name: 🇨🇦 TROJAN-12
+  server: 216.152.147.85
   port: 443
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: findconnectwithemployersandbuildprofessionalnetwork.com
-- name: 🇨🇦 VLESS-10
-  server: 172.64.144.240
-  port: 443
-  type: vless
-  uuid: 87c467e9-f0af-4b03-8fbd-65fd375d3a26
-  udp: true
-  tls: true
-  network: ws
-  servername: pmpmppm.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: pmpmppm.pages.dev
+  sni: cdn.connectingpeoplewithgreatjobs.com
 - name: 🇺🇸 SS-26
-  server: 138.197.89.234
-  port: 28960
+  server: 37.19.198.243
+  port: 443
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: DZRy4Q3QH0jUGfKFl2jDCZ
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
+- name: 🇨🇦 TROJAN-13
+  server: 216.152.147.48
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.connectingpeoplewithgreatjobs.com
+- name: 🇨🇦 TROJAN-14
+  server: 216.152.147.93
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: connectingpeoplewithgreatjobs.com
+- name: 🇺🇸 TROJAN-15
+  server: 170.101.101.211
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: api.explorecreativejobsandenhanceyourcareerportfolio.com
 - name: 🇺🇸 SS-27
-  server: 15.204.233.41
-  port: 8882
+  server: 38.64.138.135
+  port: 19999
   type: ss
   cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇨🇦 TROJAN-18
+- name: 🇺🇸 TROJAN-16
+  server: 66.163.122.81
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.searchnationwidecareerchangehelperandguidancetoday.com
+- name: 🇺🇸 SS-28
+  server: 38.121.43.231
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 TROJAN-17
+  server: 169.197.140.214
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+- name: 🇺🇸 TROJAN-18
+  server: 216.106.186.82
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.findlocaljobnetworkandbuildcommunityconnections.com
+- name: 🇨🇦 TROJAN-19
+  server: 216.152.147.79
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: blog.connectingpeoplewithgreatjobs.com
+- name: 🇺🇸 VLESS-07
+  server: 45.138.100.248
+  port: 10443
+  type: vless
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  tls: false
+  network: tcp
+  servername: 45.138.100.248
+- name: 🇺🇸 VLESS-08
+  server: 107.173.237.146
+  port: 8443
+  type: vless
+  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
+  udp: true
+  tls: true
+  network: tcp
+  servername: updates.cdn-apple.com
+  reality-opts:
+    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
+    short-id: df8611c07d
+  client-fingerprint: chrome
+- name: 🇺🇸 TROJAN-20
+  server: 169.197.140.171
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+- name: 🇺🇸 SS-29
+  server: 23.150.152.38
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 TROJAN-21
+  server: 170.101.101.67
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.explorecreativejobsandenhanceyourcareerportfolio.com
+- name: 🇺🇸 TROJAN-22
+  server: 170.101.101.53
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: www.explorecreativejobsandenhanceyourcareerportfolio.com
+- name: 🇺🇸 SS-30
+  server: 38.91.100.39
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇺🇸 TROJAN-23
+  server: 170.101.101.237
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: cdn.explorecreativejobsandenhanceyourcareerportfolio.com
+- name: 🇺🇸 TROJAN-24
+  server: 216.106.186.66
+  port: 443
+  type: trojan
+  password: 242a3d8eee5e4ed1a6bfa4141d549a25
+  udp: true
+  sni: www.findlocaljobnetworkandbuildcommunityconnections.com
+- name: 🇺🇸 TROJAN-25
+  server: 216.106.186.66
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: www.findlocaljobnetworkandbuildcommunityconnections.com
+- name: 🇨🇦 TROJAN-26
   server: 188.114.98.0
   port: 443
   type: trojan
@@ -486,164 +523,46 @@ proxies:
     path: /order/ads/
     headers:
       Host: ltf8.jueson.de5.net
-- name: 🇨🇦 VLESS-11
-  server: 104.18.28.234
-  port: 2053
-  type: vless
-  uuid: c7653db5-1fa9-9a64-331a-d80c00000050
-  udp: true
-  tls: true
-  network: ws
-  servername: turbo-smart-628.pokfjfjfdjj.workers.dev
-  ws-opts:
-    path: /sync
-    headers:
-      Host: turbo-smart-628.pokfjfjfdjj.workers.dev
-- name: 🇺🇸 TROJAN-19
-  server: 66.163.114.166
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
-- name: 🇺🇸 TROJAN-20
-  server: 66.163.114.106
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: www.findconnectwithemployersandbuildprofessionalnetwork.com
-- name: 🇨🇦 VLESS-12
-  server: saas.sin.fan
-  port: 2087
-  type: vless
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  network: ws
-  servername: vp2.1145678.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: vp2.1145678.xyz
-- name: 🇺🇸 SS-28
-  server: 38.91.100.39
+- name: 🇺🇸 SS-31
+  server: 137.184.89.151
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇨🇦 VLESS-13
-  server: spacex.com
+- name: 🇺🇸 TROJAN-27
+  server: 169.197.140.169
   port: 443
-  type: vless
-  uuid: cced2d3b-9840-4579-a6b3-5de365f3bf50
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: true
-  network: ws
-  servername: wallweb6.pages.dev
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: wallweb6.pages.dev
-- name: 🇨🇦 VLESS-14
-  server: 104.18.1.1
-  port: 2083
-  type: vless
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  network: ws
-  servername: vlsovip.1d.mom
-  ws-opts:
-    path: /
-    headers:
-      Host: vlsovip.1d.mom
-- name: 🇨🇦 VLESS-15
-  server: 172.67.74.90
+  sni: 169.197.140.169
+- name: 🇺🇸 TROJAN-28
+  server: 216.106.186.46
   port: 443
-  type: vless
-  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  tls: true
+  sni: cdn.findlocaljobnetworkandbuildcommunityconnections.com
+- name: 🇨🇦 TROJAN-29
+  server: 188.114.98.0
+  port: 443
+  type: trojan
+  password: 883e3cc8-9613-4f2d-8c42-0dd3d429db55
+  udp: true
+  sni: ltf8.jueson.de5.net
   network: ws
-  servername: cvhpyn.pages.dev
   ws-opts:
-    path: /fp
+    path: /categories/community/
     headers:
-      Host: cvhpyn.pages.dev
-- name: 🇺🇸 SS-29
-  server: 38.145.220.193
-  port: 8443
+      Host: ltf8.jueson.de5.net
+- name: 🇺🇸 SS-32
+  server: 45.86.51.18
+  port: 19999
   type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: jUbDNsFamcyDfpm+rI3Zyw==
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇨🇦 VLESS-16
-  server: www.5h.com
-  port: 443
-  type: vless
-  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
-  udp: true
-  tls: true
-  network: ws
-  servername: youxuanku.kdns.fr
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: youxuanku.kdns.fr
-- name: 🇨🇦 VLESS-17
-  server: saas.sin.fan
-  port: 2053
-  type: vless
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  network: ws
-  servername: vp7.1145678.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: vp7.1145678.xyz
-- name: 🇨🇦 VLESS-18
-  server: 172.67.155.222
-  port: 443
-  type: vless
-  uuid: 82b279c6-5cba-3a96-f8bd-780a00000035
-  udp: true
-  tls: true
-  network: ws
-  servername: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
-- name: 🇨🇦 VLESS-19
-  server: 104.19.13.194
-  port: 443
-  type: vless
-  uuid: 395bab7e-302a-42b4-bac7-8acb7d36fdf3
-  udp: true
-  tls: true
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇨🇦 VLESS-20
-  server: 162.159.130.234
-  port: 2083
-  type: vless
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  network: ws
-  servername: vp14.1145678.xyz
-  ws-opts:
-    path: /community/redirect.html
-    headers:
-      Host: vp14.1145678.xyz
 proxy-groups:
 - name: 🚀 PROXY
   type: select
@@ -657,81 +576,81 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇺🇸 SS-01
-  - 🇺🇸 TROJAN-01
-  - 🇺🇸 TROJAN-02
-  - 🇺🇸 TROJAN-03
   - 🇺🇸 SS-02
   - 🇺🇸 SS-03
-  - 🇺🇸 VLESS-01
+  - 🇺🇸 TROJAN-01
   - 🇺🇸 SS-04
-  - 🇺🇸 TROJAN-04
   - 🇺🇸 SS-05
+  - 🇺🇸 VLESS-01
+  - 🇺🇸 TROJAN-02
   - 🇺🇸 SS-06
-  - 🇺🇸 SS-07
-  - 🇺🇸 TROJAN-05
-  - 🇺🇸 TROJAN-06
-  - 🇺🇸 TROJAN-07
+  - 🇺🇸 TROJAN-03
   - 🇺🇸 VLESS-02
+  - 🇺🇸 SS-07
   - 🇺🇸 SS-08
-  - 🇺🇸 VMESS-01
   - 🇺🇸 SS-09
+  - 🇺🇸 TROJAN-06
   - 🇺🇸 SS-10
+  - 🇺🇸 TROJAN-07
   - 🇺🇸 SS-11
-  - 🇺🇸 VLESS-03
   - 🇺🇸 SS-12
   - 🇺🇸 SS-13
   - 🇺🇸 SS-14
   - 🇺🇸 SS-15
+  - 🇺🇸 VMESS-01
   - 🇺🇸 SS-16
   - 🇺🇸 SS-17
   - 🇺🇸 SS-18
+  - 🇺🇸 VLESS-03
   - 🇺🇸 SS-19
   - 🇺🇸 SS-20
-  - 🇺🇸 SS-21
-  - 🇺🇸 TROJAN-09
   - 🇺🇸 VLESS-04
+  - 🇺🇸 VLESS-05
+  - 🇺🇸 TROJAN-09
+  - 🇺🇸 SS-21
+  - 🇺🇸 VLESS-06
   - 🇺🇸 SS-22
+  - 🇺🇸 TROJAN-10
   - 🇺🇸 SS-23
   - 🇺🇸 SS-24
-  - 🇺🇸 TROJAN-11
-  - 🇺🇸 TROJAN-12
-  - 🇺🇸 VLESS-07
-  - 🇺🇸 TROJAN-14
-  - 🇺🇸 VLESS-09
-  - 🇺🇸 TROJAN-15
-  - 🇺🇸 TROJAN-16
   - 🇺🇸 SS-25
-  - 🇺🇸 TROJAN-17
   - 🇺🇸 SS-26
+  - 🇺🇸 TROJAN-15
   - 🇺🇸 SS-27
-  - 🇺🇸 TROJAN-19
-  - 🇺🇸 TROJAN-20
+  - 🇺🇸 TROJAN-16
   - 🇺🇸 SS-28
+  - 🇺🇸 TROJAN-17
+  - 🇺🇸 TROJAN-18
+  - 🇺🇸 VLESS-07
+  - 🇺🇸 VLESS-08
+  - 🇺🇸 TROJAN-20
   - 🇺🇸 SS-29
+  - 🇺🇸 TROJAN-21
+  - 🇺🇸 TROJAN-22
+  - 🇺🇸 SS-30
+  - 🇺🇸 TROJAN-23
+  - 🇺🇸 TROJAN-24
+  - 🇺🇸 TROJAN-25
+  - 🇺🇸 SS-31
+  - 🇺🇸 TROJAN-27
+  - 🇺🇸 TROJAN-28
+  - 🇺🇸 SS-32
 - name: 🌍 Others
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - 🇨🇦 TROJAN-04
+  - 🇨🇦 TROJAN-05
   - 🇨🇦 TROJAN-08
-  - 🇨🇦 TROJAN-10
-  - 🇨🇦 VLESS-05
+  - 🇨🇦 TROJAN-11
+  - 🇨🇦 TROJAN-12
   - 🇨🇦 TROJAN-13
-  - 🇨🇦 VLESS-06
-  - 🇨🇦 VLESS-08
-  - 🇨🇦 VLESS-10
-  - 🇨🇦 TROJAN-18
-  - 🇨🇦 VLESS-11
-  - 🇨🇦 VLESS-12
-  - 🇨🇦 VLESS-13
-  - 🇨🇦 VLESS-14
-  - 🇨🇦 VLESS-15
-  - 🇨🇦 VLESS-16
-  - 🇨🇦 VLESS-17
-  - 🇨🇦 VLESS-18
-  - 🇨🇦 VLESS-19
-  - 🇨🇦 VLESS-20
+  - 🇨🇦 TROJAN-14
+  - 🇨🇦 TROJAN-19
+  - 🇨🇦 TROJAN-26
+  - 🇨🇦 TROJAN-29
 rules:
 - GEOSITE,category-ir,DIRECT
 - GEOIP,IR,DIRECT
